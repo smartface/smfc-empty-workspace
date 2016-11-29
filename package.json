@@ -4,7 +4,9 @@
   "description": "Smartface Empty Workspace",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:smoke": ".smartface/bin/smokeTest.sh",
+    "watch": ".smartface/bin/watch.sh"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "babel-preset-stage-2": "^6.18.0",
     "null-loader": "^0.1.1",
     "webpack": "^1.13.3",
-    "webpack-node-externals": "^1.5.4"
+    "webpack-node-externals": "^1.5.4",
+    "webpack-validator": "^2.2.9"
   }
 }

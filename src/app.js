@@ -1,44 +1,47 @@
-// TODO: make this a noop code that just builds.
 
-// SmartFace core dependencies:
-// Temporarily using `__smartface_npm__` as an alias for the smartface npm repository; this is just for the demonstration.
-import { application, i18n } from '__smartface_npm__/@smartface/jscore';
-import { SERVER_ERROR, SIZE_OVERFLOW } from '__smartface-npm__/@smartface/jscore/constants';
-import { alert } from '__smartface_npm__/@smartface/jscore/globals';
+console.log( 'Hello World!' );
 
-// Dependencies for the current application:
-import { page1 } from './pages';
+// // TODO: make this a noop code that just builds.
 
-// Use `i18n.initialize()` factory method to create localizable assets:
-const lang = i18n.initialize();
+// // TODO: test https://github.com/facebook/react/blob/master/src/renderers/noop/ReactNoop.js on a separate sandbox project.
 
-application.on( 'start', ( err, data ) => {
-    void err;
+// // SmartFace core dependencies:
+// // Temporarily using `__smartface_npm__` as an alias for the smartface npm repository;
+// // this is just for the demonstration.
+// import { application, i18n } from '__smartface_npm__/@smartface/jscore';
+// import { SERVER_ERROR, SIZE_OVERFLOW } from '__smartface-npm__/@smartface/jscore/constants';
+// import { alert } from '__smartface_npm__/@smartface/jscore/globals';
 
-    page1.show();
-} );
+// // Dependencies for the current application:
+// import { page1 } from './pages';
 
-application.on( 'error', ( err ) => { void err; } );
+// // Use `i18n.initialize()` factory method to create localizable assets:
+// const lang = i18n.initialize();
 
-const isNetworkError = ( err ) => err.type === SERVER_ERROR || err.type === SIZE_OVERFLOW;
+// application.on( 'start', ( err, data ) => {
+//     void err;
 
-application.on( 'uncaughtException', ( err ) => {
-    if ( isNetworkError( err ) ) {
-        alert( lang.networkError );
+//     page1.show();
+// } );
 
-        return;
-    }
+// application.on( 'error', ( err ) => { void err; } );
 
-    alert( {
-        title: lang.applicationError,
-        message: `
-            ${err.message}
-            ${err.sourceURL}
-            ${err.line}
-            ${err.stack}
-        `
-    } );
-} );
+// const isNetworkError = ( err ) => err.type === SERVER_ERROR || err.type === SIZE_OVERFLOW;
 
+// application.on( 'uncaughtException', ( err ) => {
+//     if ( isNetworkError( err ) ) {
+//         alert( lang.networkError );
 
-// TODO: test https://github.com/facebook/react/blob/master/src/renderers/noop/ReactNoop.js on a separate sandbox project.
+//         return;
+//     }
+
+//     alert( {
+//         title: lang.applicationError,
+//         message: `
+//             ${err.message}
+//             ${err.sourceURL}
+//             ${err.line}
+//             ${err.stack}
+//         `
+//     } );
+// } );
