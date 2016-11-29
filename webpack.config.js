@@ -12,16 +12,20 @@ module.exports = validate({
         pathinfo: false
     },
     resolve: {
+        extensions: [ '', '.webpack.js', 'web.js', '.js', '.json' ],
         alias: {
 
             // TODO: temporary hack
-            '__smartface_npm__': join(__dirname, '__smartface_npm__')
+            '__smartface_npm__': join( __dirname, '__smartface_npm__' ),
+
+            'languages': join( __dirname, 'resources/i18n' )
         }
     },
     devtool: 'source-map',
     module: {
         loaders: [
-            {test: /\.js$/, loader: 'babel', exclude: /vendor|node_modules|bower_components/}
+            { test: /\.js$/, loader: 'babel', exclude: /vendor|node_modules|bower_components/ },
+            { test: /\.json$/, loader: 'json' }
         ]
     },
     plugins: []

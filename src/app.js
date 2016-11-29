@@ -1,24 +1,37 @@
 
-/*
- * Smartface core dependencies.
- *
- * __smartface_npm__ is a temporary alias while I’m testing things;
- * once it’s settled it’ll probably need to be moved to NPM under @smartface org.
- */
+// Smartface core dependencies.
+//
+// Note: __smartface_npm__ is a temporary alias while I’m testing things;
+// once it’s settled it’ll probably need to be moved to NPM under @smartface org.
 import application from '__smartface_npm__/@smartface/application';
 import { assertNotNull } from '__smartface_npm__/@smartface/test';
-import { initialize as initializeI18n } from '__smartface_npm__/@smartface/i18n';
+import { initialize as i18n } from '__smartface_npm__/@smartface/i18n';
 import { log } from '__smartface_npm__/@smartface/console';
+import { alert } from '__smartface_npm__/@smartface/global_context';
 
-/*
- * Application dependencies.
- */
-import * as dictionaries from './i18n';
+// Localization setup:
+import de from 'languages/de';
+import fi from 'languages/fi';
+import en from 'languages/en';
+import tr from 'languages/tr';
+const lang = i18n( [ de, fi, en, tr ] );
 
-const lang = initializeI18n( dictionaries );
+// Application dependencies:
+// none so far.
 
-assertNotNull( application );
-assertNotNull( lang );
 
-log( 'Demo application is up and running!' );
+// Sanity checks:
+assertNotNull( application, 'Application appers to not have been defined.' );
+assertNotNull( lang, 'Problem with the localization setup.' );
 
+// Application code below:
+
+application.on( 'start', ( err, data ) => {
+    void err;
+
+    alert( 'Application has started.' );
+} );
+
+log( `
+    *** Smartface app is up and running! ***
+` );

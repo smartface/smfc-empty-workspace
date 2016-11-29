@@ -1,7 +1,9 @@
 * Play with ReactNoop and see if you can use the components and send events back and forth withouth DOM.
-
+* `npm run build`
 
 <!--
+ADD: eslint and other static analysis.
+
 // import { SERVER_ERROR, SIZE_OVERFLOW } from '__smartface-npm__/@smartface/jscore/constants';
 // import { alert } from '__smartface_npm__/@smartface/jscore/globals';
 

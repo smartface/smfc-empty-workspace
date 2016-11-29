@@ -6,8 +6,17 @@ const successCallbacks = [];
 const errorCallbacks = []
 
 if ( typeof Application !== 'undefined' ) {
-    Application.onStart = ( evt ) => successCallbacks.forEach( ( callback ) => callback( null, true ) );
-    Application.onError = ( error ) => errorCallbacks.forEach( ( callback ) => callback( error ) );
+    Application.onStart = ( evt ) => {
+        successCallbacks.forEach( ( callback ) => callback( null, true ) );
+
+        successCallbacks.length = 0;
+    };
+
+    Application.onError = ( error ) => {
+        errorCallbacks.forEach( ( callback ) => callback( error ) );
+
+        errorCallbacks.length = 0;
+    };
 }
 
 const eventRegistry = {

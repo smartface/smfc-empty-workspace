@@ -7,7 +7,8 @@ const defineLanguage = ( languageCode, dictionary ) => {
 const initialize = ( dictionaries ) => {
     dictionaries.forEach( ( dictionary ) => defineLanguage( dictionary.language, dictionary ) );
 
-    return dictionaries.en;
+    // TODO: handle other languages
+    return dictionaries.filter( ( dictionary ) => dictionary['@code'] === 'en' );
 };
 
 export { initialize };
