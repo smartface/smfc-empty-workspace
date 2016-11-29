@@ -19,7 +19,6 @@ const lang = i18n( [ de, fi, en, tr ] );
 // Application dependencies:
 // none so far.
 
-
 // Sanity checks:
 assertNotNull( application, 'Application appers to not have been defined.' );
 assertNotNull( lang, 'Problem with the localization setup.' );
