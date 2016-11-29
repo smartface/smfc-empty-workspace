@@ -1,47 +1,24 @@
 
-console.log( 'Hello World!' );
+/*
+ * Smartface core dependencies.
+ *
+ * __smartface_npm__ is a temporary alias while I’m testing things;
+ * once it’s settled it’ll probably need to be moved to NPM under @smartface org.
+ */
+import application from '__smartface_npm__/@smartface/application';
+import { assertNotNull } from '__smartface_npm__/@smartface/test';
+import { initialize as initializeI18n } from '__smartface_npm__/@smartface/i18n';
+import { log } from '__smartface_npm__/@smartface/console';
 
-// // TODO: make this a noop code that just builds.
+/*
+ * Application dependencies.
+ */
+import * as dictionaries from './i18n';
 
-// // TODO: test https://github.com/facebook/react/blob/master/src/renderers/noop/ReactNoop.js on a separate sandbox project.
+const lang = initializeI18n( dictionaries );
 
-// // SmartFace core dependencies:
-// // Temporarily using `__smartface_npm__` as an alias for the smartface npm repository;
-// // this is just for the demonstration.
-// import { application, i18n } from '__smartface_npm__/@smartface/jscore';
-// import { SERVER_ERROR, SIZE_OVERFLOW } from '__smartface-npm__/@smartface/jscore/constants';
-// import { alert } from '__smartface_npm__/@smartface/jscore/globals';
+assertNotNull( application );
+assertNotNull( lang );
 
-// // Dependencies for the current application:
-// import { page1 } from './pages';
+log( 'Demo application is up and running!' );
 
-// // Use `i18n.initialize()` factory method to create localizable assets:
-// const lang = i18n.initialize();
-
-// application.on( 'start', ( err, data ) => {
-//     void err;
-
-//     page1.show();
-// } );
-
-// application.on( 'error', ( err ) => { void err; } );
-
-// const isNetworkError = ( err ) => err.type === SERVER_ERROR || err.type === SIZE_OVERFLOW;
-
-// application.on( 'uncaughtException', ( err ) => {
-//     if ( isNetworkError( err ) ) {
-//         alert( lang.networkError );
-
-//         return;
-//     }
-
-//     alert( {
-//         title: lang.applicationError,
-//         message: `
-//             ${err.message}
-//             ${err.sourceURL}
-//             ${err.line}
-//             ${err.stack}
-//         `
-//     } );
-// } );

@@ -12,3 +12,4 @@ plugin/iOS/*
 !plugin/iOS/README.md
 node_modules
 dist
+scripts/*
