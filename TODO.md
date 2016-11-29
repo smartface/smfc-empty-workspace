@@ -1,0 +1,1 @@
+* Play with ReactNoop and see if you can use the components and send events back and forth withouth DOM.

@@ -1,0 +1,36 @@
+{
+  "name": "@volkan/smartface-empty-workspace",
+  "version": "0.0.1",
+  "description": "Smartface Empty Workspace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v0lkan/smfc-empty-workspace.git"
+  },
+  "keywords": [
+    "smartface",
+    "workspace",
+    "demo"
+  ],
+  "author": "Volkan Özçelik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v0lkan/smfc-empty-workspace/issues"
+  },
+  "homepage": "https://github.com/v0lkan/smfc-empty-workspace#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "null-loader": "^0.1.1",
+    "webpack": "^1.13.3",
+    "webpack-node-externals": "^1.5.4"
+  }
+}
