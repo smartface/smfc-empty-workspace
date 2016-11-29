@@ -1,10 +1,10 @@
 // TODO: make this a noop code that just builds.
 
 // SmartFace core dependencies:
-// Temporarily using `smartface-npm` as an alias for the smartface npm repository; this is just for the demonstration.
-import { application, i18n } from 'smartface-npm/@smartface/jscore';
-import { SERVER_ERROR, SIZE_OVERFLOW } from 'smartface-npm/@smartface/jscore/constants';
-import { alert } from 'smartface-npm/@smartface/jscore/globals';
+// Temporarily using `__smartface_npm__` as an alias for the smartface npm repository; this is just for the demonstration.
+import { application, i18n } from '__smartface_npm__/@smartface/jscore';
+import { SERVER_ERROR, SIZE_OVERFLOW } from '__smartface-npm__/@smartface/jscore/constants';
+import { alert } from '__smartface_npm__/@smartface/jscore/globals';
 
 // Dependencies for the current application:
 import { page1 } from './pages';
