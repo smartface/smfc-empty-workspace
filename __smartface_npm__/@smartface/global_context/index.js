@@ -1,8 +1,5 @@
 /* global alert, Application */
 
-const noop = () => {};
-const alert = typeof alert !== 'undefined' ? alert : noop;
-
 const whenContextReady = new Promise( ( resolve, reject ) => {
     const resolveWithContext = () => {
         resolve( { alert } );
