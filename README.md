@@ -34,6 +34,36 @@ v7.2.0
 
 // TODO: complete this part.
 
+## Before Running the App in Your Device
+
+Make sure that your code is in good shape by running the linter:
+
+```
+npm run lint
+```
+
+When you don’t see anything in the output, it means that your code is in good shape.
+
+Remember: No news is good news.
+
+If you, however, see a warning like the following, then you probably will need to fix it:
+
+```
+ 9:36  error  Parsing error: Unexpected token, expected ,
+
+   7 | import tr from 'languages/tr';
+   8 |
+>  9 | const lang = i18n(  de, fi, en, tr ] );
+     |                                    ^
+  10 |
+  11 | export default lang;
+  12 |
+
+✖ 1 problem (1 error, 0 warnings)
+```
+
+Linter warning are most of the time self-descriptive, and helpful. In the above case for instance, we have forgotten to add an `[` to the variable definition on line 9; — it should have been `const lang = i18n( [ de, fi, en, tr ] );` instead (node the extra `[` after the `( ` );
+
 ## Usage
 
 // TODO: complete this section.

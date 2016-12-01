@@ -1,29 +1,29 @@
 
-// #region Smartface Core Stub — Do not modify.
+// #region Smartface core dependencies:
 
-// Note: __smartface_npm__ is a temporary alias while I’m testing things;
-// once it’s settled it’ll probably need to be moved to NPM under @smartface org.
-import application from '__smartface_npm__/@smartface/application';
+    import application from '@volkan/smartface-core-application';
 
 // #endregion
 
 // #region Application
 
-const log = console.log;
-const alert = global.alert;
+    const log = console.log;
+    const alert = global.alert;
 
-application.on( 'start', ( err, data ) => {
-    if ( err ) {
+    application.on( 'start', ( err, data ) => {
+        void data;
 
-        // Contrary to the popular myth, the below is the actual phrase Apollo astronauts used:
-        alert( 'Houston, we’ve had a problem.' );
-    }
+        if ( err ) {
 
-    alert( 'Application has started.' );
-} );
+            // Contrary to the popular myth, the below is the actual phrase Apollo astronauts used:
+            alert( 'Houston, we’ve had a problem.' );
+        }
 
-log( `
-    *** Smartface app is up and running! ***
-` );
+        alert( 'Application started.' );
+    } );
+
+    log( `
+        *** Smartface app is up and running! ***
+    ` );
 
 // #endregion
