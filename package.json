@@ -1,5 +1,5 @@
 {
-  "name": "@volkan/smartface-empty-workspace",
+  "name": "@volkan/smartface-empty-workspace-jsnext",
   "version": "0.0.1",
   "description": "Smartface Empty Workspace",
   "main": "index.js",

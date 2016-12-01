@@ -13,3 +13,4 @@ plugin/iOS/*
 node_modules
 dist
 scripts/*
+npm-debug.log
