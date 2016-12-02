@@ -1,6 +1,6 @@
 {
   "name": "@volkan/smartface-empty-workspace-jsnext",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Smartface Empty Workspace",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/v0lkan/smfc-empty-workspace.git"
+    "url": "git+https://github.com/v0lkan/smartface-empty-workspace-jsnext.git"
   },
   "keywords": [
     "smartface",
@@ -21,9 +21,9 @@
   "author": "Volkan Özçelik",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/v0lkan/smfc-empty-workspace/issues"
+    "url": "https://github.com/v0lkan/smartface-empty-workspace-jsnext/issues"
   },
-  "homepage": "https://github.com/v0lkan/smfc-empty-workspace#readme",
+  "homepage": "https://github.com/v0lkan/smartface-empty-workspace-jsnext#readme",
   "devDependencies": {
     "@volkan/smartface-coding-standards": "*",
     "babel-cli": "6.18.0",
