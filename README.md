@@ -16,9 +16,9 @@ This is currently an **experimental** repository. Use it at your own risk.
 
 ## Installation
 
-Make sure you’ve cloned this repository in the [Smartface Cloud IDE](https://cloud.smartface.io/Home/Index).
+Make sure you’ve cloned this repository in the [**Smartface Cloud IDE**](https://cloud.smartface.io/Home/Index).
 
-Once you are inside the Cloud IDE, update it, and also install a recent version of the Node.JS runtime.
+Once you are inside the **Smartface Cloud IDE**, update the linux packages and also install a recent version of the Node.JS runtime as follows:
 
 ```
 sudo apt-get update
@@ -32,7 +32,11 @@ node --version
 v7.2.0
 ```
 
-// TODO: complete this part.
+After that install required modules:
+
+```
+npm install
+```
 
 ## Before Running the App in Your Device
 

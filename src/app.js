@@ -1,29 +1,25 @@
 
 // #region Smartface core dependencies:
-
-    import application from '@volkan/smartface-core-application';
-
+import application from '@volkan/smartface-core-application';
 // #endregion
 
 // #region Application
+const log = console.log;
+const alert = global.alert;
 
-    const log = console.log;
-    const alert = global.alert;
+application.on( 'start', ( err, data ) => {
+    void data;
 
-    application.on( 'start', ( err, data ) => {
-        void data;
+    if ( err ) {
 
-        if ( err ) {
+        // Contrary to the popular myth, the below is the actual phrase Apollo astronauts used:
+        alert( 'Houston, we’ve had a problem.' );
+    }
 
-            // Contrary to the popular myth, the below is the actual phrase Apollo astronauts used:
-            alert( 'Houston, we’ve had a problem.' );
-        }
+    alert( 'Application started.' );
+} );
 
-        alert( 'Application started.' );
-    } );
-
-    log( `
-        *** Smartface app is up and running! ***
-    ` );
-
+log( `
+    *** Smartface app is up and running! ***
+` );
 // #endregion

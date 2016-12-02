@@ -11,7 +11,9 @@ module.exports = validate({
     devtool: 'source-map',
     module: {
         loaders: [
-            { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+            
+            // Exclude all node modules that are not inside the @volkan org.
+            { test: /\.js$/, loader: 'babel', exclude: /node_modules(?!\/@volkan)/ },
             { test: /\.json$/, loader: 'json' }
         ]
     },
