@@ -1,25 +1,15 @@
 
 // #region Smartface core dependencies:
-import application from '@volkan/smartface-core-application';
+// TODO: move this to its own repository:
+import Application from './smartface/components/Application';
+// TODO: move this to its own repository:
+import { mount } from './smartface/device';
 // #endregion
 
-// #region Application
 const log = console.log;
-const alert = global.alert;
 
-application.on( 'start', ( err, data ) => {
-    void data;
+mount(
+    <Application onStart={() => alert( 'Application has started' )} />
+);
 
-    if ( err ) {
-
-        // Contrary to the popular myth, the below is the actual phrase Apollo astronauts used:
-        alert( 'Houston, we’ve had a problem.' );
-    }
-
-    alert( 'Application started.' );
-} );
-
-log( `
-    *** Smartface app is up and running! ***
-` );
-// #endregion
+log( '\n\n*** Smartface app is up and running! ***\n\n' );

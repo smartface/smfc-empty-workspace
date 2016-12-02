@@ -43,6 +43,13 @@
     "webpack-validator": "2.2.9"
   },
   "dependencies": {
-    "@volkan/smartface-core-application": "*"
+    "@volkan/smartface-core-application": "*",
+    "jsdom": "^9.8.3",
+    "react": "15.4.1",
+    "react-addons-test-utils": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-noop-renderer": "0.0.0",
+    "redux": "3.6.0",
+    "redux-thunk": "2.1.0"
   }
 }

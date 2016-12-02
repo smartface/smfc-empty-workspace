@@ -42,4 +42,55 @@ ADD: eslint and other static analysis.
 // } );
 
 // // TODO: test https://github.com/facebook/react/blob/master/src/renderers/noop/ReactNoop.js on a separate sandbox project.
+
+// const DummyComponent = () => (<p>Hello</p>);
+
+// const SillyComponent = () => (<p>World</p>);
+
+// const createRenderer = () => TestUtils.createRenderer();
+
+// try {
+//     const osman = createRenderer();
+    
+//     const renderMe = osman.render;
+
+//     let flip = false;
+
+//     setInterval(() => {
+//         flip = !flip;
+        
+//         if (flip) {
+//             osman.render(<DummyComponent />);                    
+//         } else {
+//             osman.render(<SillyComponent />);                                
+        
+//         }
+//         const result = osman.getRenderOutput();
+//         alert( 'rendered a dummy react component ' + JSON.stringify(result) );
+//     }, 1000);
+
+
+// } catch (ex) {
+//     console.log(ex);
+//     alert(ex);
+// }
+
+// application.on( 'start', ( err, data ) => {
+//     void data;
+
+//     if ( err ) {
+
+//         // Contrary to the popular myth, the below is the actual phrase Apollo astronauts used:
+//         alert( 'Houston, we’ve had a problem.' );
+//     }
+
+//     alert( 'Application started 7.' );
+// } );
+
+// log( `
+//     *** Smartface app is up and running! ***
+// ` );
+
 -->
+
+
