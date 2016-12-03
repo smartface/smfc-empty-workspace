@@ -7,13 +7,17 @@
 -----------------------------------------------------------------
 ```
 
-## smartface.io Empty App v0.3.0
+## smartface-empty-workspace v0.3.3
+
+* Linter fixes and minor changes.
+
+## smartface-empty-workspace v0.3.0
 
 * Synchronized versions of all `@volkan/smartface-*` repositories to `v.0.3.0`.
 * Updated the [README](README.md).
 * Added some exra helper scripts.
 
-## smartface.io Empty App v0.1.2
+## smartface-empty-workspace v0.1.2
 
 * Initial version.
 * The application can now use modern JavaScript (es2016/es2017+) and React (round of applause please!).

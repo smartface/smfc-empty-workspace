@@ -61,14 +61,14 @@ You can, for example, tap the “run on device” button on the [smartface.io](h
 
 ## Package Scripts
 
-This demo application comes with some helper npm scripts.
+This demo application comes with some helper npm scripts:
 
 * `npm run test`: Runs unit tests.
 * `npm run watcn`: Runs a watcher task so that whenever you change your files the application a development build is generated.
 * `npm run build`: Creates a production build.
 * `npm run clean-build`: Purges all the dependencies, fetches fresh dependencies from the Internet, then executes `npm run build` (*this might take a couple of minutes*).
 * `npm run pull-build`: Pulls the recent master branch, and executes runs `npm run clean-build` (*this might take a couple of minutes*).
-* `npm run lint`: Verifies the correctness of your source code.
+* `npm run lint`: Verifies the correctness of the source code.
 
 ## Important Files and Folders
 
