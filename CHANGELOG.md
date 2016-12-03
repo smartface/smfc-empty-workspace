@@ -7,7 +7,7 @@
 -----------------------------------------------------------------
 ```
 
-## smartface.io Empty App v.0.3.0
+## smartface.io Empty App v0.3.0
 
 * Synchronized versions of all `@volkan/smartface-*` repositories to `v.0.3.0`.
 * Updated the [README](README.md).
