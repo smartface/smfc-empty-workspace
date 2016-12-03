@@ -1,6 +1,6 @@
 {
   "name": "@volkan/smartface-empty-workspace-jsnext",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "An empty workspace template to be used in the smartface.io Cloud projects https://www.smartface.io/cloud/",
   "main": "index.js",
   "scripts": {
