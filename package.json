@@ -1,12 +1,12 @@
 {
   "name": "@volkan/smartface-empty-workspace-jsnext",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Smartface Empty Workspace",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "bin/watch.sh",
-    "build": "bin/build.sh",
+    "build": "bin/build.sh;bin/lint.sh",
     "lint": "bin/lint.sh",
     "clean-install": "bin/clean-install.sh"
   },
@@ -37,6 +37,7 @@
     "babel-preset-stage-2": "6.18.0",
     "eslint": "3.11.1",
     "eslint-plugin-babel": "4.0.0",
+    "eslint-plugin-react": "^6.7.1",
     "json-loader": "0.5.4",
     "null-loader": "0.1.1",
     "webpack": "1.13.3",
