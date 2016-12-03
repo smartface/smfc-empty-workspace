@@ -1,13 +1,14 @@
 {
   "name": "@volkan/smartface-empty-workspace-jsnext",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Smartface Empty Workspace",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "bin/watch.sh",
     "build": "bin/build.sh",
-    "lint": "bin/lint.sh"
+    "lint": "bin/lint.sh",
+    "clean-install": "bin/clean-install.sh"
   },
   "repository": {
     "type": "git",
@@ -43,13 +44,8 @@
     "webpack-validator": "2.2.9"
   },
   "dependencies": {
-    "@volkan/smartface-core-application": "*",
-    "jsdom": "^9.8.3",
-    "react": "15.4.1",
-    "react-addons-test-utils": "^15.4.1",
-    "react-dom": "^15.4.1",
-    "react-noop-renderer": "0.0.0",
-    "redux": "3.6.0",
-    "redux-thunk": "2.1.0"
+    "@volkan/smartface-component-application": "*",
+    "@volkan/smartface-core-device": "*",
+    "react": "15.4.1"
   }
 }

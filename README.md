@@ -91,6 +91,10 @@ When the above command finishes successfully; your repository is ready to be run
 * **CHANGELOG.md**: A log of what has been done since the last version.
 * **README.md**: This very file.
 
+## Package Scripts
+
+// TODO: TBD.
+
 ## Wanna Help?
 
 Any help is more than appreciated.
@@ -123,7 +127,9 @@ We are committed to making participation in this project a harassment-free exper
 
 ## From the [Smartface](https://www.smartface.io) Team
 
-Hey fellow developer, thank you for using Smartface Cloud!
+### Hello Fellow Developer
+
+Thank you for using Smartface Cloud!
 
 Developing native apps for iOS and Android is as easy as a few lines of JavaScript code.
 
@@ -135,7 +141,7 @@ Welcome to the world of mobility!
 
 Smartface Team.
 
-## Support, Documentation, and Useful Links
+### Support, Documentation, and Useful Links
 
 * [Guides](https://www.smartface.io/guides)
 * [API Docs](https://docs.smartface.io)
