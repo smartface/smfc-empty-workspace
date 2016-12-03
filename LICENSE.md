@@ -9,8 +9,7 @@
 
 ## The MIT License (*MIT*)
 
-Copyright © [smartface.io](https://www.smartface.io) [Volkan Özçelik](https://volkan.io) <me@volkan.io>
-and contributors.
+Copyright © [smartface.io](https://www.smartface.io), [Volkan Özçelik](https://volkan.io) <me@volkan.io>, and contributors.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
