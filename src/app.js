@@ -15,10 +15,10 @@ import React from 'react';
 
 const log = console.log;
 
-/* eslint-disable no-alert*/
+/* eslint-disable no-alert */
 mount(
     <Application onStart={() => alert( 'smartface.io loves you!' )} />
 );
-/* eslint-enable no-alert*/
+/* eslint-enable no-alert */
 
 log( '\n\n*** Smartface app is up and running! ***\n\n' );
