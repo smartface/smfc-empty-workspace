@@ -1,3 +1,12 @@
+```
+ ____                       _    __                      _
+/ ___| _ __ ___   __ _ _ __| |_ / _| __ _  ___ ___      (_) ___
+\___ \| '_ ` _ \ / _` | '__| __| |_ / _` |/ __/ _ \     | |/ _ \
+ ___) | | | | | | (_| | |  | |_|  _| (_| | (_|  __/  _  | | (_) |
+|____/|_| |_| |_|\__,_|_|   \__|_|  \__,_|\___\___| (_) |_|\___/
+-----------------------------------------------------------------
+```
+
 As contributors and maintainers of this project, and in the interest of  fostering an open and welcoming community, we pledge to respect all people who  contribute through reporting issues, posting feature requests, updating  documentation, submitting pull requests or patches, and other activities.
 
 We are committed to making participation in this project a harassment-free  experience for everyone, regardless of level of experience, gender, gender  identity and expression, sexual orientation, disability, personal appearance,  body size, race, ethnicity, age, religion, or nationality.

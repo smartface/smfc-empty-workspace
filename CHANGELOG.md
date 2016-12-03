@@ -7,6 +7,12 @@
 -----------------------------------------------------------------
 ```
 
+## smartface.io Empty App v.0.3.0
+
+* Synchronized versions of all `@volkan/smartface-*` repositories to `v.0.3.0`.
+* Updated the [README](README.md).
+* Added some exra helper scripts.
+
 ## smartface.io Empty App v0.1.2
 
 * Initial version.
@@ -17,4 +23,4 @@
     * Note to self: I’ll kindly request <smartface.io> team to create these repositories under their organization once the code is stabilized.
 * Next up:
     * Creating some documentation on this and also on the dependent repositories.
-    * Adding a really minimal unit test and integrating it with Travis (or some other CI system).
+    * Adding a really minimal unit test and integrating it with Travis (or some other CI system

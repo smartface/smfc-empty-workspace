@@ -1,14 +1,15 @@
 {
   "name": "@volkan/smartface-empty-workspace-jsnext",
-  "version": "0.1.3",
-  "description": "Smartface Empty Workspace",
+  "version": "0.3.0",
+  "description": "An empty workspace template to be used in the smartface.io Cloud projects https://www.smartface.io/cloud/",
   "main": "index.js",
   "scripts": {
+    "build": "bin/build.sh;bin/lint.sh",
+    "clean-build": "bin/clean-build.sh",
+    "pull-build": "bin/pull.sh",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "bin/watch.sh",
-    "build": "bin/build.sh;bin/lint.sh",
-    "lint": "bin/lint.sh",
-    "clean-install": "bin/clean-install.sh"
+    "lint": "bin/lint.sh"
   },
   "repository": {
     "type": "git",
