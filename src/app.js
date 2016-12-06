@@ -21,4 +21,8 @@ mount(
 );
 /* eslint-enable no-alert */
 
+const app = {};
+
 log( '\n\n*** Smartface app is up and running! ***\n\n' );
+
+export default app;

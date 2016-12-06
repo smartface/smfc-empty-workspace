@@ -1,13 +1,13 @@
 {
   "name": "@volkan/smartface-empty-workspace-jsnext",
-  "version": "0.3.3",
+  "version": "0.5.0",
   "description": "An empty workspace template to be used in the smartface.io Cloud projects https://www.smartface.io/cloud/",
   "main": "index.js",
   "scripts": {
     "build": "bin/build.sh;bin/lint.sh",
     "clean-build": "bin/clean-build.sh",
     "pull-build": "bin/pull.sh",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "bin/test.sh",
     "watch": "bin/watch.sh",
     "lint": "bin/lint.sh"
   },
@@ -32,14 +32,16 @@
     "babel-core": "6.18.2",
     "babel-eslint": "7.1.1",
     "babel-loader": "6.2.8",
-    "babel-polyfill": "6.16.0",
     "babel-preset-es2015": "6.18.0",
     "babel-preset-react": "6.16.0",
+    "babel-preset-stage-0": "6.16.0",
     "babel-preset-stage-2": "6.18.0",
+    "chai": "3.5.0",
     "eslint": "3.11.1",
     "eslint-plugin-babel": "4.0.0",
     "eslint-plugin-react": "6.7.1",
     "json-loader": "0.5.4",
+    "mocha": "3.2.0",
     "null-loader": "0.1.1",
     "webpack": "1.13.3",
     "webpack-node-externals": "1.5.4",
@@ -48,6 +50,7 @@
   "dependencies": {
     "@volkan/smartface-component-application": "*",
     "@volkan/smartface-core-device": "*",
+    "babel-polyfill": "6.16.0",
     "react": "15.4.1"
   }
 }
