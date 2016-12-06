@@ -7,6 +7,12 @@
 -----------------------------------------------------------------
 ```
 
+## smartface-empty-workspace v0.5.0
+
+* Synchronized versions of all `@volkan/smartface-*` repositories to `v.0.5.0`.
+* Added CI and unit test support.
+* Cleaned-up `.gitignore`.
+
 ## smartface-empty-workspace v0.3.3
 
 * Linter fixes and minor changes.
