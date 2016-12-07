@@ -1,0 +1,4 @@
+            <Label parent='page1' key='lbl' text='hello' left='15%' top='45%' width='70%' height='15%' multiLine={true}
+                textAlign='center' />
+            <Image parent='page1' key='img' src='smartface.png' left='15%' top='20%' width='70%' height='10%'
+                fillType='aspectFit' />
