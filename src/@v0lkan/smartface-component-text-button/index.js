@@ -11,10 +11,12 @@ const Pages = global.Pages;
 const SMF = global.SMF;
 
 const TextButton = ( props ) => {
+   alert( 'in TextButton constructor!' )
+
    const name = props.key;
    const parent = props.parent;
 
-   const btn = new SMF.UI.TextButton( { ...props } );
+   const btn = new SMF.UI.TextButton( { name, ...props } );
 
    Pages[ parent ].add( btn );
 
