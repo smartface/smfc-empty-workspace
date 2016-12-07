@@ -14,11 +14,12 @@ void React;
 // #endregion
 
 // #region smartface.io Components
-import Application from './@volkan/smartface-component-application';
-import Page from './@volkan/smartface-component-page';
-import TextButton from './@volkan/smartface-component-text-button';
-//import Image from '@volkan/smartface-component-image';
-//import Image from '@volkan/smartface-component-label';
+// NOTE: temporarily importing from `_volkan` for development purposes; will move to `@volkan` when done.
+import Application from './_volkan/smartface-component-application';
+import Page from './_volkan/smartface-component-page';
+import TextButton from './_volkan/smartface-component-text-button';
+//import Image from '_volkan/smartface-component-image';
+//import Image from '_volkan/smartface-component-label';
 // #endregion
 
 mount(
