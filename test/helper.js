@@ -8,5 +8,5 @@
  */
 
 require('babel-core/register')({
-  ignore: /\/node_modules\/(?!@volkan)/
+  ignore: /\/node_modules\/(?!(@volkan|badem))/
 });
