@@ -7,33 +7,21 @@
  * -----------------------------------------------------------------
  */
 
-// #region smartface.io Runtime
-import { mount } from '@volkan/smartface-core-device';
-import React from 'react';
-void React;
-// #endregion
+import { mount } from 'badem/dist/js';
+import store from '@volkan/smartface-component-store';
+import config from './app.config.js';
 
-// #region smartface.io Components
-// NOTE: temporarily importing from `_volkan` for development purposes; will move to `@volkan` when done.
-import Application from './_volkan/smartface-component-application';
-import Page from './_volkan/smartface-component-page';
-import TextButton from './_volkan/smartface-component-text-button';
-//import Image from '_volkan/smartface-component-image';
-//import Image from '_volkan/smartface-component-label';
-// #endregion
+const log = console.log;
 
-mount(
-    <Application onStart={() => alert( 'smartface.io loves you!' )}>
-        <Page key='page1'  fillColor='#eeeeee'onKeyPress={() =>{}} onShow={() => {}}>
-            <TextButton
-                parent='page1' key='btn' text='Click me!'
-                left='15%' top='70%' height='10%' enableRipple={true}
-                onClick={() =>{}}
-            />
-        </Page>
-    </Application>
-);
-
-console.log( '\n\n*** Smartface app is up and running! ***\n\n' );
+mount( store, config )
+    .then( () => {
+        // TODO: the mounter should use the `landingePage` attribute implicitly instead.
+        global.Pages.FirstPage.show();
+        
+        log( '\n\n*** Smartface app is up and running !!! ***\n\n' );
+    } ).catch( ( ex ) => {
+        log( '\n\n*** There is a problem. ***\n\n' );
+        log( JSON.stringify( ex ) );
+    } );   
 
 export default {};

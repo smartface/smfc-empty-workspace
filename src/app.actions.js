@@ -7,8 +7,4 @@
  * -----------------------------------------------------------------
  */
 
- const Image = () => {
-
- };
-
- export default Image;
+// TODO: implement me!

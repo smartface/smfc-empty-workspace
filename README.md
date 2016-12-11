@@ -9,6 +9,8 @@
 
 An empty workspace template to be used in the smartface.io Cloud projects https://www.smartface.io/cloud/
 
+TODO:// this readme needs an update.
+
 ## About
 
 This is a “Hello World” [smartface.io](https://www.smartface.io) workspace, using modern JavaScript; it started as a fork of <https://github.com/smartface/smfc-empty-workspace> to add React and ES6/7+ support.
@@ -36,6 +38,10 @@ After that install required modules:
 ```
 npm install
 ```
+
+## `src/app.json`
+
+// TODO: TBD.
 
 ## Dependencies
 
