@@ -3,7 +3,7 @@
 		{
 			"type": "SMF.UI.Page",
 			"props": {
-				"name": "page1",
+				"name": "page2",
 				"width": 375,
 				"height": 667.1686746987951,
 				"isRemovable": false,
@@ -25,7 +25,7 @@
 			"type": "SMF.UI.statusBar",
 			"props": {
 				"name": "statusBar",
-				"parent": "page1",
+				"parent": "page2",
 				"isRemovable": false
 			}
 		},
@@ -33,7 +33,7 @@
 			"type": "SMF.UI.iOS.NavigationBar",
 			"props": {
 				"name": "navigationBar",
-				"parent": "page1",
+				"parent": "page2",
 				"isRemovable": false
 			}
 		},
@@ -42,7 +42,7 @@
 			"props": {
 				"name": "actionBar",
 				"children": [],
-				"parent": "page1",
+				"parent": "page2",
 				"isRemovable": false
 			}
 		},
@@ -53,7 +53,7 @@
 				"minH": 15,
 				"key": "c5abb100",
 				"i": "c5abb100",
-				"parent": "page1",
+				"parent": "page2",
 				"width": "70%",
 				"height": "10%",
 				"left": "15%",
@@ -71,7 +71,7 @@
 				"minH": 15,
 				"key": "980522a9",
 				"i": "980522a9",
-				"parent": "page1",
+				"parent": "page2",
 				"width": "70%",
 				"height": "15.000000000000002%",
 				"left": "15%",
@@ -93,7 +93,7 @@
 				"minH": 15,
 				"key": "845d2004",
 				"i": "845d2004",
-				"parent": "page1",
+				"parent": "page2",
 				"width": "70%",
 				"height": "10%",
 				"left": "15%",
