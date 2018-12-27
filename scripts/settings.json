@@ -1,11 +1,11 @@
 {
 	"config": {
 		"theme": {
-			"currentTheme": "workspaceTheme",
-			"baseTheme": "workspaceTheme",
+			"currentTheme": "baseTheme",
+			"baseTheme": "baseTheme",
 			"themes": [
-				"defaultTheme",
-				"workspaceTheme"
+				"baseTheme",
+				"defaultTheme"
 			]
 		},
 		"paths": {
@@ -17,6 +17,6 @@
 			"themesFolder": "themes",
 			"themesDistFolder": "scripts/themes"
 		},
-		"version": "6.12.0"
+		"version": "6.13.0-alpha.6"
 	}
 }

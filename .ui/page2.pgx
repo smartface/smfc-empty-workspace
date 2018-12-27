@@ -8,26 +8,27 @@
 				"children": [
 					"a829471c",
 					"35f1c1a1",
-					"845d2004",
-					"980522a9",
-					"c5abb100"
+					"ce08-3fd4-03e6-4438",
+					"9e3d-3c8c-de2c-aad8"
 				],
 				"isRemovable": true,
 				"name": "page2",
 				"orientation": "PORTRAIT",
-				"parent": null
+				"parent": null,
+				"safeAreaEnabled": true
 			},
 			"type": "Page",
 			"userProps": {
-				"backgroundColor": "rgba( 197, 210, 28, 1 )",
 				"flexProps": {
 					"justifyContent": "SPACE_AROUND"
 				},
 				"orientation": "PORTRAIT",
-				"paddingLeft": 10,
-				"paddingRight": 10
+				"paddingBottom": 20,
+				"paddingLeft": 16,
+				"paddingRight": 16,
+				"safeAreaEnabled": true
 			},
-			"version": "6.12.0"
+			"version": "6.13.0-alpha.6"
 		},
 		{
 			"className": ".statusBar",
@@ -51,79 +52,76 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "7761adc8",
-				"title": "page2"
+				"title": ""
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "page2",
+				"title": "",
 				"titleColor": "rgba( 0, 0, 0, 1 )",
 				"visible": true
 			}
 		},
 		{
-			"className": ".button",
-			"id": "c5abb100",
-			"props": {
-				"children": [],
-				"name": "btn",
-				"parent": "7761adc8",
-				"text": "Back",
-				"usePageVariable": true
-			},
-			"type": "Button",
-			"userProps": {
-				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20
-				},
-				"font": {
-					"color": "rgba( 255, 255, 255, 1 )"
-				},
-				"height": 60,
-				"text": "Back",
-				"usePageVariable": true,
-				"width": null
-			}
-		},
-		{
 			"className": ".label",
-			"id": "980522a9",
+			"id": "ce08-3fd4-03e6-4438",
 			"props": {
+				"autoHeight": 76.66666666666667,
 				"children": [],
 				"name": "lbl",
 				"parent": "7761adc8",
-				"text": "This is second page",
+				"text": "Page2\n\n",
 				"usePageVariable": true
 			},
 			"type": "Label",
 			"userProps": {
-				"backgroundColor": "rgba( 0, 0, 0, 0 )",
+				"autoHeight": 76.66666666666667,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"marginLeft": 20,
-					"marginRight": 20
+					"marginRight": 20,
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
-				"text": "This is second page",
+				"font": {
+					"size": 32,
+					"bold": false,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Regular"
+				},
+				"height": 90,
+				"left": 0,
+				"multiline": true,
+				"text": "Page2\n\n",
 				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 210, 210, 210, 1 )",
+				"top": 0,
 				"usePageVariable": true,
 				"width": null
 			}
 		},
 		{
-			"className": ".imageView",
-			"id": "845d2004",
+			"className": ".button",
+			"id": "9e3d-3c8c-de2c-aad8",
 			"props": {
+				"autoHeight": 51.11111111111111,
 				"children": [],
-				"name": "img",
-				"parent": "7761adc8"
+				"name": "btnSayHello",
+				"parent": "7761adc8",
+				"text": "Say Hello",
+				"usePageVariable": true
 			},
-			"type": "ImageView",
+			"type": "Button",
 			"userProps": {
+				"autoHeight": 51.11111111111111,
 				"flexProps": {
-					"marginLeft": 20,
-					"marginRight": 20
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
 				},
-				"height": 60,
-				"image": "smartface.png",
+				"left": 0,
+				"text": "Say Hello",
+				"top": 0,
+				"usePageVariable": true,
 				"width": null
 			}
 		}

@@ -26,9 +26,7 @@ notifier.subscribe((connectionType) => {
 
 const {
     NativeRouter: Router,
-    Router: RouterBase,
     NativeStackRouter: StackRouter,
-    BottomTabBarRouter,
     Route
 } = require("@smartface/router");
 

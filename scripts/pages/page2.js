@@ -1,3 +1,5 @@
+const PageTitleLayout = require("components/PageTitleLayout");
+const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const extend = require("js-base/core/extend");
 const Color = require("sf-core/ui/color");
 const System = require("sf-core/device/system");
@@ -16,6 +18,9 @@ const Page2 = extend(Page2Design)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.btnSayHello.onPress = () => {
+            alert("Hello World !");
+        }
     });
 
 /**
@@ -27,7 +32,7 @@ const Page2 = extend(Page2Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
-
+    this.headerBar.titleLayout.applyLayout();
     page.headerBar.itemColor = Color.BLACK;
     if (!page._routeData)
         return;
@@ -46,16 +51,14 @@ function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
 
-    page.btn.onPress = btn_onPress.bind(page);
     if (System.OS === "Android")
         page.btn.enabled = false;
     page.android.onBackButtonPressed = () => {
         page.btn.enabled && this._router.goBack();
     };
-}
-
-function btn_onPress() {
-    this._router.goBack();
+    this.headerBar.titleLayout = new PageTitleLayout();
+    this.parentController && (this.parentController.headerBar.itemColor = Color.WHITE);
+    componentContextPatch(this.headerBar.titleLayout, "titleLayout");
 }
 
 module.exports = Page2;

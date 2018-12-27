@@ -1,8 +1,9 @@
 {
 	"components": [
 		{
+			"className": "",
 			"id": "57f4-201f-4bfc-5fc6",
-			"initialized": false,
+			"initialized": true,
 			"props": {
 				"children": [
 					"23c1-aa21-38ff-148e",
@@ -14,16 +15,16 @@
 			},
 			"type": "Page",
 			"userProps": {},
-			"version": "6.12.0"
+			"version": "6.13.0-alpha.6"
 		},
 		{
+			"className": "",
 			"id": "23c1-aa21-38ff-148e",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
-				"parent": "57f4-201f-4bfc-5fc6",
-				"visible": true
+				"parent": "57f4-201f-4bfc-5fc6"
 			},
 			"type": "StatusBar",
 			"userProps": {}
@@ -35,8 +36,7 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "57f4-201f-4bfc-5fc6",
-				"title": "__library__",
-				"visible": true
+				"title": "__library__"
 			},
 			"type": "HeaderBar",
 			"userProps": {
