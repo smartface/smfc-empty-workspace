@@ -2,16 +2,16 @@
 	"components": [
 		{
 			"className": ".page",
-			"id": "e891b86d",
+			"id": "8368-7ffa-7f89-5f1e",
 			"initialized": true,
 			"props": {
 				"children": [
-					"42b807d1",
-					"b7d28cff",
-					"980522a9"
+					"d842-4b69-27e0-9654",
+					"e4be-287c-cdfe-4ac1",
+					"f4fe-1f65-19d2-1f62"
 				],
 				"isRemovable": true,
-				"name": "page1",
+				"name": "page4",
 				"orientation": "PORTRAIT",
 				"parent": null,
 				"safeAreaEnabled": true
@@ -30,12 +30,12 @@
 		},
 		{
 			"className": ".statusBar",
-			"id": "42b807d1",
+			"id": "d842-4b69-27e0-9654",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "statusBar",
-				"parent": "e891b86d"
+				"parent": "8368-7ffa-7f89-5f1e"
 			},
 			"type": "StatusBar",
 			"userProps": {
@@ -45,12 +45,12 @@
 		},
 		{
 			"className": ".headerBar",
-			"id": "b7d28cff",
+			"id": "e4be-287c-cdfe-4ac1",
 			"props": {
 				"children": [],
 				"isRemovable": false,
 				"name": "headerBar",
-				"parent": "e891b86d",
+				"parent": "8368-7ffa-7f89-5f1e",
 				"title": "Page Title"
 			},
 			"type": "HeaderBar",
@@ -62,18 +62,18 @@
 		},
 		{
 			"className": ".label",
-			"id": "980522a9",
+			"id": "f4fe-1f65-19d2-1f62",
 			"props": {
-				"autoHeight": 39.705882352941174,
+				"autoHeight": 39.325842696629216,
 				"children": [],
 				"name": "lbl",
-				"parent": "e891b86d",
-				"text": "Page1\n",
+				"parent": "8368-7ffa-7f89-5f1e",
+				"text": "Page4\n",
 				"usePageVariable": true
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 39.705882352941174,
+				"autoHeight": 39.325842696629216,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"marginLeft": 20,
@@ -89,7 +89,7 @@
 				},
 				"height": 90,
 				"multiline": true,
-				"text": "Page1\n",
+				"text": "Page4\n",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
 				"usePageVariable": true,
