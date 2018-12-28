@@ -45,12 +45,6 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-
-    if (System.OS === "Android")
-        page.btn.enabled = false;
-    page.android.onBackButtonPressed = () => {
-        page.btn.enabled && this._router.goBack();
-    };
 }
 
 module.exports = Page2;
