@@ -1,0 +1,100 @@
+{
+	"components": [
+		{
+			"className": ".page",
+			"id": "e891b86d",
+			"initialized": true,
+			"props": {
+				"children": [
+					"42b807d1",
+					"b7d28cff",
+					"980522a9"
+				],
+				"isRemovable": true,
+				"name": "page1",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"flexProps": {
+					"justifyContent": "CENTER",
+					"alignItems": "STRETCH"
+				},
+				"orientation": "PORTRAIT",
+				"paddingLeft": 10,
+				"paddingRight": 10,
+				"safeAreaEnabled": true
+			},
+			"version": "6.13.0-alpha.6"
+		},
+		{
+			"className": ".statusBar",
+			"id": "42b807d1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e891b86d"
+			},
+			"type": "StatusBar",
+			"userProps": {
+				"visible": true
+			}
+		},
+		{
+			"className": ".headerBar",
+			"id": "b7d28cff",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e891b86d",
+				"title": ""
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "",
+				"visible": true
+			}
+		},
+		{
+			"className": ".label",
+			"id": "980522a9",
+			"props": {
+				"autoHeight": 40.229885057471265,
+				"children": [],
+				"name": "lbl",
+				"parent": "e891b86d",
+				"text": "Page1",
+				"usePageVariable": true
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 40.229885057471265,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
+				"flexProps": {
+					"marginLeft": 20,
+					"marginRight": 20,
+					"alignSelf": "AUTO"
+				},
+				"font": {
+					"size": 32,
+					"bold": false,
+					"italic": false,
+					"family": "SFProText",
+					"style": "Regular"
+				},
+				"height": 90,
+				"marginBottom": 10,
+				"multiline": false,
+				"text": "Page1",
+				"textAlignment": "MIDCENTER",
+				"textColor": "rgba( 223, 223, 223, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		}
+	]
+}

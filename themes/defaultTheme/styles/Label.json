@@ -11,12 +11,13 @@
         "borderWidth": 0,
         "textColor": "#000000",
         "textAlignment": "MIDLEFT",
-        "font": {
-            "size": 16,
-            "bold": false,
-            "italic": false,
-            "family": "Default"
-        },
+		"font": {
+			"size": 16,
+			"bold": true,
+			"italic": false,
+			"family": "SFProText",
+			"style": "Semibold"
+		},
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"

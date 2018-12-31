@@ -1,3 +1,5 @@
+const PageTitleLayout = require("components/PageTitleLayout");
+const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const extend = require("js-base/core/extend");
 const Color = require("sf-core/ui/color");
 const System = require("sf-core/device/system");
@@ -27,8 +29,6 @@ const Page2 = extend(Page2Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
-
-    page.headerBar.itemColor = Color.BLACK;
     if (!page._routeData)
         return;
     console.log(page._routeData.message);
@@ -45,17 +45,6 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-
-    page.btn.onPress = btn_onPress.bind(page);
-    if (System.OS === "Android")
-        page.btn.enabled = false;
-    page.android.onBackButtonPressed = () => {
-        page.btn.enabled && this._router.goBack();
-    };
-}
-
-function btn_onPress() {
-    this._router.goBack();
 }
 
 module.exports = Page2;
