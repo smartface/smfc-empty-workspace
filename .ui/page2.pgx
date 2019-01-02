@@ -69,7 +69,7 @@
 				"children": [],
 				"name": "lbl",
 				"parent": "7761adc8",
-				"text": "Page2\n\n",
+				"text": "Page2\n",
 				"usePageVariable": true
 			},
 			"type": "Label",
@@ -92,7 +92,7 @@
 				"height": 90,
 				"left": 0,
 				"multiline": true,
-				"text": "Page2\n\n",
+				"text": "Page2\n",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
 				"top": 0,
