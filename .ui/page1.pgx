@@ -8,7 +8,8 @@
 				"children": [
 					"42b807d1",
 					"b7d28cff",
-					"980522a9"
+					"980522a9",
+					"9e49-7873-afba-472b"
 				],
 				"isRemovable": true,
 				"name": "page1",
@@ -19,14 +20,16 @@
 			"type": "Page",
 			"userProps": {
 				"flexProps": {
-					"justifyContent": "CENTER",
+					"justifyContent": "SPACE_BETWEEN",
 					"alignItems": "STRETCH"
 				},
 				"orientation": "PORTRAIT",
 				"paddingBottom": 20,
+				"paddingLeft": 16,
+				"paddingRight": 16,
 				"safeAreaEnabled": true
 			},
-			"version": "6.13.0-alpha.6"
+			"version": "6.13.0"
 		},
 		{
 			"className": ".statusBar",
@@ -39,7 +42,6 @@
 			},
 			"type": "StatusBar",
 			"userProps": {
-				"style": "LIGHTCONTENT",
 				"visible": true
 			}
 		},
@@ -51,11 +53,11 @@
 				"isRemovable": false,
 				"name": "headerBar",
 				"parent": "e891b86d",
-				"title": "Page Title"
+				"title": "Page1"
 			},
 			"type": "HeaderBar",
 			"userProps": {
-				"title": "Page Title",
+				"title": "Page1",
 				"titleColor": "rgba( 255, 255, 255, 1 )",
 				"visible": true
 			}
@@ -64,21 +66,22 @@
 			"className": ".label",
 			"id": "980522a9",
 			"props": {
-				"autoHeight": 39.705882352941174,
+				"autoHeight": 39.325842696629216,
 				"children": [],
 				"name": "lbl",
 				"parent": "e891b86d",
-				"text": "Page1\n",
+				"text": "Page1",
 				"usePageVariable": true
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 39.705882352941174,
+				"autoHeight": 39.325842696629216,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"marginLeft": 20,
 					"marginRight": 20,
-					"alignSelf": "STRETCH"
+					"alignSelf": "STRETCH",
+					"flexGrow": 1
 				},
 				"font": {
 					"size": 32,
@@ -89,9 +92,32 @@
 				},
 				"height": 90,
 				"multiline": true,
-				"text": "Page1\n",
+				"text": "Page1",
 				"textAlignment": "MIDCENTER",
 				"textColor": "rgba( 210, 210, 210, 1 )",
+				"usePageVariable": true,
+				"width": null
+			}
+		},
+		{
+			"className": ".button",
+			"id": "9e49-7873-afba-472b",
+			"props": {
+				"autoHeight": 50.561797752808985,
+				"children": [],
+				"name": "btnNext",
+				"parent": "e891b86d",
+				"text": "Next Page",
+				"usePageVariable": true
+			},
+			"type": "Button",
+			"userProps": {
+				"autoHeight": 50.561797752808985,
+				"flexProps": {
+					"alignSelf": "AUTO",
+					"positionType": "RELATIVE"
+				},
+				"text": "Next Page",
 				"usePageVariable": true,
 				"width": null
 			}

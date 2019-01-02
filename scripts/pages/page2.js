@@ -18,6 +18,9 @@ const Page2 = extend(Page2Design)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.btnSayHello.onPress = () => {
+            alert("Hello World !");
+        }
     });
 
 /**
@@ -29,6 +32,8 @@ const Page2 = extend(Page2Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
+    this.headerBar.titleLayout.applyLayout();
+    page.headerBar.itemColor = Color.BLACK;
     if (!page._routeData)
         return;
     console.log(page._routeData.message);
@@ -45,6 +50,15 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
+
+    if (System.OS === "Android")
+        page.btn.enabled = false;
+    page.android.onBackButtonPressed = () => {
+        page.btn.enabled && this._router.goBack();
+    };
+    this.headerBar.titleLayout = new PageTitleLayout();
+    this.parentController && (this.parentController.headerBar.itemColor = Color.WHITE);
+    componentContextPatch(this.headerBar.titleLayout, "titleLayout");
 }
 
 module.exports = Page2;

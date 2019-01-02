@@ -18,6 +18,9 @@ const Page1 = extend(Page1Design)(
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+        this.btnNext.onPress = () => {
+            this._router.push("/pages/page2");
+        };
     });
 
 /**
@@ -29,7 +32,9 @@ const Page1 = extend(Page1Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
+    this.headerBar.titleLayout.applyLayout();
     if (System.OS === "Android") {
+        setTimeout(() => page.btnNext.enabled = true, 300);
     }
 }
 /**
@@ -40,6 +45,9 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
     superOnLoad();
+    this.headerBar.titleLayout = new PageTitleLayout();
+    this.headerBar.itemColor = Color.RED;
+    componentContextPatch(this.headerBar.titleLayout, "titleLayout");
 }
 
 module.exports = Page1;
