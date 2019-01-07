@@ -28,7 +28,7 @@
 			"className": ".imageView .pageTitleLayout_logo",
 			"id": "bc78-f2d3-ac3c-5b22",
 			"props": {
-				"autoHeight": 53.76344086021505,
+				"autoHeight": 53.48837209302326,
 				"children": [],
 				"name": "logo",
 				"parent": "0201-dc86-607b-2891",
@@ -39,13 +39,18 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 53.76344086021505,
+				"autoHeight": 53.48837209302326,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"flexGrow": 1
 				},
-				"height": null,
+				"height": 25,
 				"image": "smartface.png",
 				"imageFillType": "ASPECTFIT",
+				"marginBottom": null,
+				"marginLeft": null,
+				"marginRight": null,
+				"marginTop": null,
 				"usePageVariable": true,
 				"width": null
 			}

@@ -1,12 +1,12 @@
 {
 	".gridViewItem": {
-		"height": 200,
-		"width": 200,
+		"height": 227,
+		"width": 165,
 		"touchEnabled": true,
 		"visible": true,
-		"backgroundColor": "#FFFFFF",
+		"backgroundColor": "rgba(255,255,255,0)",
 		"alpha": 1,
-		"borderColor": "rgba(0,0,0,1)",
+		"borderColor": "#000000",
 		"borderWidth": 0,
 		"font": {},
 		"flexProps": {

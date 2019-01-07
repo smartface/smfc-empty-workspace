@@ -1,14 +1,24 @@
 {
     ".searchView": {
         "touchEnabled": true,
-        "width": 200,
+        "width": 343,
         "height": 70,
         "visible": true,
         "alpha": 1,
-        "borderColor": "rgba(0,0,0,1)",
+        "borderColor": "#000000",
+        "textColor": "#000000",
+        "textFieldBackgroundColor": "rgba(142,142,147,0.12)",
+        "cursorColor": "rgba(66,107,242,1)",
+        "hintColor": "rgb(142,142,147)",
         "borderWidth": 0,
         "textAlignment": "MIDLEFT",
-        "font": {},
+		"font": {
+			"size": 17,
+			"bold": true,
+			"italic": false,
+			"family": "SFProText",
+			"style": "Regular"
+		},
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"

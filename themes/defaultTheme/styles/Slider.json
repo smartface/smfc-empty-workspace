@@ -1,24 +1,23 @@
 {
     ".slider": {
         "touchEnabled": true,
-        "maxTrackColor": "#00FF00",
-        "minTrackColor": "#A9A9A9",
-        "thumbColor": "#D3D3D3",
-        "value": 50,
+        "maxTrackColor": "rgb(183,183,183)",
+        "minTrackColor": "#00a1f1",
+        "thumbImage": "slider_knob.png",
+        "value": 60,
         "maxValue": 100,
         "minValue": 0,
-        "width": 300,
+        "width": 343,
         "visible": true,
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "rgba(255,255,255,0)",
         "alpha": 1,
-        "borderColor": "rgba(0,0,0,1)",
+        "borderColor": "#000000",
         "borderWidth": 0,
-        "font": {},
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
         },
-        "minHeight": 23,
+        "minHeight": 40,
         "&-small": {
             "width": 100
         },

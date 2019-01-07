@@ -1,14 +1,14 @@
 {
 	".flexLayout": {
-		"height": 200,
-		"width": 200,
+		"height": 343,
+		"width": 343,
 		"touchEnabled": true,
 		"visible": true,
-		"backgroundColor": "#FFFFFF",
+		"backgroundColor": "rgb(255,255,255,0)",
 		"alpha": 1,
-		"borderColor": "rgba(0,0,0,1)",
+		"borderColor": "#000000",
 		"borderWidth": 0,
-		"font": {},
+		"borderRadius": 8,
 		"flexProps": {
 			"alignSelf": "AUTO",
 			"direction": "INHERIT",

@@ -9,7 +9,9 @@
 					"42b807d1",
 					"b7d28cff",
 					"980522a9",
-					"9e49-7873-afba-472b"
+					"9e49-7873-afba-472b",
+					"cb22-3bce-7110-e45f",
+					"be71-2df0-7648-273d"
 				],
 				"isRemovable": true,
 				"name": "page1",
@@ -24,9 +26,6 @@
 					"alignItems": "STRETCH"
 				},
 				"orientation": "PORTRAIT",
-				"paddingBottom": 20,
-				"paddingLeft": 16,
-				"paddingRight": 16,
 				"safeAreaEnabled": true
 			},
 			"version": "6.13.0"
@@ -113,13 +112,33 @@
 			"type": "Button",
 			"userProps": {
 				"autoHeight": 50.561797752808985,
-				"flexProps": {
-					"alignSelf": "AUTO",
-					"positionType": "RELATIVE"
-				},
 				"text": "Next Page",
-				"usePageVariable": true,
-				"width": null
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".slider",
+			"id": "cb22-3bce-7110-e45f",
+			"props": {
+				"children": [],
+				"name": "slider1",
+				"parent": "e891b86d"
+			},
+			"type": "Slider",
+			"userProps": {}
+		},
+		{
+			"className": ".switch",
+			"id": "be71-2df0-7648-273d",
+			"props": {
+				"children": [],
+				"name": "switch1",
+				"parent": "e891b86d",
+				"toggle": true
+			},
+			"type": "Switch",
+			"userProps": {
+				"toggle": true
 			}
 		}
 	]

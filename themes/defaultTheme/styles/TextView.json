@@ -1,13 +1,13 @@
 {
     ".textView": {
-        "width": 250,
-        "height": 70,
+        "width": 343,
+        "height": 131,
         "touchEnabled": true,
         "visible": true,
         "multiline": true,
         "backgroundColor": "#FFFFFF",
         "alpha": 1,
-        "borderColor": "rgba(0,0,0,1)",
+        "borderColor": "#000000",
         "borderWidth": 0,
         "textAlignment": "MIDLEFT",
         "flexProps": {

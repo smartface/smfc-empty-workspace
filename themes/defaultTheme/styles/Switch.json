@@ -1,23 +1,22 @@
 {
     ".switch": {
-        "width": 200,
+        "width": 60,
         "touchEnabled": true,
         "toggle": false,
-        "thumbOnColor": "#00e600",
-        "thumbOffColor": "#CCCCCC",
-        "toggleOffColor": "#010101",
-        "toggleOnColor": "#CCCCCC",
+        "android": {
+            "toggleOffColor": "#EEEEEE"
+        },
+        "toggleOnColor": "#00a1f1",
         "visible": true,
         "alpha": 1,
-        "borderColor": "rgba(0,0,0,1)",
+        "borderColor": "#000000",
         "borderWidth": 0,
-        "font": {},
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
         },
         "minHeight": 31,
-        "minWidth": 51,
+        "minWidth": 60,
         "&-small": {
             "width": 100
         },

@@ -10,7 +10,7 @@
 					"76f4-a7ec-36e9-a444"
 				],
 				"name": "__library__",
-				"orientation": "PORTRAIT",
+				"orientation": "AUTO",
 				"parent": null
 			},
 			"type": "Page",

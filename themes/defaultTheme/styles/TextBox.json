@@ -1,20 +1,22 @@
 {
     ".textBox": {
-        "height": 70,
-        "width": 200,
+        "height": 54,
+        "width": 343,
         "touchEnabled": true,
         "visible": true,
         "backgroundColor": "#FFFFFF",
         "alpha": 1,
-        "borderColor": "rgba(0,0,0,1)",
-        "borderWidth": 0,
-        "textColor": "rgba(0,0,0,1)",
+        "borderColor": "#00a1f1",
+        "borderWidth": 1,
+        "borderRadius": 4,
+        "textColor": "#000000",
         "textAlignment": "MIDLEFT",
         "font": {
             "size": 16,
             "bold": false,
             "italic": false,
-            "family": "Default"
+			"family": "SFProText",
+			"style": "Regular"
         },
         "flexProps": {
             "alignSelf": "AUTO",

@@ -37,9 +37,6 @@ function onShow(superOnShow) {
     if (!page._routeData)
         return;
     console.log(page._routeData.message);
-    if (System.OS === "Android") {
-        setTimeout(() => page.btn.enabled = true, 400);
-    }
 }
 
 /**
@@ -50,14 +47,8 @@ function onShow(superOnShow) {
 function onLoad(superOnLoad) {
     const page = this;
     superOnLoad();
-
-    if (System.OS === "Android")
-        page.btn.enabled = false;
-    page.android.onBackButtonPressed = () => {
-        page.btn.enabled && this._router.goBack();
-    };
     this.headerBar.titleLayout = new PageTitleLayout();
-    this.parentController && (this.parentController.headerBar.itemColor = Color.WHITE);
+    this.parentController && this.parentController.headerBar &&  (this.parentController.headerBar.itemColor = Color.WHITE);
     componentContextPatch(this.headerBar.titleLayout, "titleLayout");
 }
 
