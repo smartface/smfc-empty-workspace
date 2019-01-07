@@ -5,7 +5,7 @@
         "touchEnabled": true,
         "visible": true,
         "multiline": true,
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "rgba(255,255,255,0)",
         "alpha": 1,
         "borderColor": "#000000",
         "borderWidth": 0,

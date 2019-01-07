@@ -4,7 +4,7 @@
         "width": 343,
         "touchEnabled": true,
         "visible": true,
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "rgba(255,255,255,0)",
         "alpha": 1,
         "borderColor": "#00a1f1",
         "borderWidth": 1,
