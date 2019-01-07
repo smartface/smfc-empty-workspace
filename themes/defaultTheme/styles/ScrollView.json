@@ -1,7 +1,7 @@
 {
 	".scrollView": {
 		"height": 343,
-		"width": 343,
+		"width": null,
 		"touchEnabled": true,
 		"visible": true,
 		"backgroundColor": "rgb(255,255,255,0)",
@@ -11,6 +11,10 @@
 		"borderRadius": 8,
 		"scrollBarEnabled": true,
 		"align": "VERTICAL",
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "marginBottom": 16,
 		"flexProps": {
 			"alignSelf": "AUTO",
 			"direction": "INHERIT",

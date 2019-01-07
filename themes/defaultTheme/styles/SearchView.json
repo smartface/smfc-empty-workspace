@@ -1,7 +1,7 @@
 {
     ".searchView": {
         "touchEnabled": true,
-        "width": 343,
+        "width": null,
         "height": 70,
         "visible": true,
         "alpha": 1,
@@ -12,6 +12,10 @@
         "hintColor": "rgb(142,142,147)",
         "borderWidth": 0,
         "textAlignment": "MIDLEFT",
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "marginBottom": 16,
 		"font": {
 			"size": 17,
 			"bold": true,

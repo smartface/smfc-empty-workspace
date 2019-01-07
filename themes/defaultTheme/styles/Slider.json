@@ -7,7 +7,7 @@
         "value": 60,
         "maxValue": 100,
         "minValue": 0,
-        "width": 343,
+        "width": null,
         "visible": true,
         "backgroundColor": "rgba(255,255,255,0)",
         "alpha": 1,

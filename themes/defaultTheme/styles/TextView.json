@@ -1,6 +1,6 @@
 {
     ".textView": {
-        "width": 343,
+        "width": null,
         "height": 131,
         "touchEnabled": true,
         "visible": true,
@@ -10,6 +10,10 @@
         "borderColor": "#000000",
         "borderWidth": 0,
         "textAlignment": "MIDLEFT",
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "marginBottom": 16,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
