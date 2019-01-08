@@ -1,4 +1,32 @@
 {
+    ".sf-switch": {
+        "width": 60,
+        "touchEnabled": true,
+        "toggle": false,
+        "android": {
+            "toggleOffColor": "#EEEEEE"
+        },
+        "toggleOnColor": "#00a1f1",
+        "visible": true,
+        "alpha": 1,
+        "borderColor": "#000000",
+        "borderWidth": 0,
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "minHeight": 31,
+        "minWidth": 60,
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    },
     ".switch": {
         "width": 60,
         "touchEnabled": true,

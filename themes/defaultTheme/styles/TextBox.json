@@ -1,4 +1,41 @@
 {
+    ".sf-textBox": {
+        "height": 54,
+        "width": null,
+        "touchEnabled": true,
+        "visible": true,
+        "backgroundColor": "rgba(255,255,255,0)",
+        "alpha": 1,
+        "borderColor": "#00a1f1",
+        "borderWidth": 1,
+        "borderRadius": 4,
+        "textColor": "#000000",
+        "textAlignment": "MIDLEFT",
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "marginBottom": 16,
+        "font": {
+            "size": 16,
+            "bold": false,
+            "italic": false,
+			"family": "SFProText",
+			"style": "Regular"
+        },
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    },
     ".textBox": {
         "height": 54,
         "width": null,

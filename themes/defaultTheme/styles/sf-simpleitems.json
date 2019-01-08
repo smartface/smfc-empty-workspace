@@ -1,0 +1,125 @@
+{
+    ".sf": {
+        "&-gridViewItem": {
+            "&-simple": {
+                "flexProps": {
+                    "justifyContent": "FLEX_START",
+                    "alignItems": "STRETCH"
+                },
+                "height": 227.17391304347825,
+                "left": 107.6086956521739,
+                "top": 121.73913043478261,
+                "width": 165,
+                "&-preview": {
+                    "backgroundColor": "rgba( 255, 255, 255, 0 )",
+                    "height": 165,
+                    "image": "imageview_preview.png",
+                    "imageFillType": "ASPECTFIT",
+                    "marginBottom": null,
+                    "marginLeft": null,
+                    "marginRight": null,
+                    "marginTop": null,
+                    "width": null
+                },
+                "&-title": {
+                    "flexProps": {
+                        "positionType": "RELATIVE",
+                        "alignSelf": "CENTER"
+                    },
+                    "font": {
+                        "size": 15,
+                        "bold": true,
+                        "italic": false,
+                        "family": "SFProText",
+                        "style": "Semibold"
+                    },
+                    "height": 20,
+                    "marginBottom": null,
+                    "marginLeft": null,
+                    "marginRight": null,
+                    "marginTop": 13,
+                    "textAlignment": "MIDCENTER",
+                    "textColor": "rgba( 0, 0, 0, 1 )"
+                },
+                "&-subtitle": {
+                    "flexProps": {
+                        "positionType": "RELATIVE",
+                        "alignSelf": "CENTER"
+                    },
+                    "font": {
+                        "size": 13,
+                        "bold": false,
+                        "italic": false,
+                        "family": "SFProText",
+                        "style": "Regular"
+                    },
+                    "height": 18,
+                    "marginBottom": 12,
+                    "marginLeft": null,
+                    "marginRight": null,
+                    "marginTop": null,
+                    "textAlignment": "MIDCENTER",
+                    "textColor": "rgba( 0, 0, 0, 1 )"
+                }
+            }
+        },
+        "&-listViewItem": {
+            "&-simple": {
+                "flexProps": {
+                    "flexDirection": "ROW",
+                    "alignItems": "CENTER"
+                },
+                "&-title": {
+                    "flexProps": {
+                        "flexGrow": 3,
+                        "alignSelf": "AUTO"
+                    },
+                    "font": {
+                        "size": 16,
+                        "bold": false,
+                        "italic": false,
+                        "family": "SFProText",
+                        "style": "Regular"
+                    },
+                    "marginBottom": null,
+                    "marginRight": null,
+                    "marginTop": null,
+                    "textColor": "rgba( 0, 0, 0, 1 )",
+                    "width": null
+                },
+                "&-chevron": {
+                    "marginBottom": null,
+                    "marginLeft": null,
+                    "marginTop": null,
+                    "textAlignment": "MIDRIGHT",
+                    "textColor": "rgba( 0, 0, 0, 0.25 )",
+                    "width": null,
+                    "flexProps": {
+                        "flexGrow": 1
+                    },
+                    "font": {
+                        "size": 13,
+                        "bold": false,
+                        "italic": false,
+                        "family": "FontAwesome5FreeSolid",
+                        "style": null
+                    }
+                },
+                "&-line": {
+                    "backgroundColor": "rgba( 210, 210, 210, 1 )",
+                    "bottom": 0,
+                    "flexProps": {
+                        "positionType": "ABSOLUTE"
+                    },
+                    "height": 1,
+                    "left": 16,
+                    "marginBottom": null,
+                    "marginLeft": null,
+                    "marginRight": null,
+                    "marginTop": null,
+                    "right": 0
+                }
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 {
-    ".imageView": {
+    ".sf-imageView": {
 		"height": 343,
 		"width": null,
 		"touchEnabled": true,
 		"visible": true,
-		"backgroundColor": "rgba( 210, 210, 210, 1 )",
+		"backgroundColor": "rgba( 210, 210, 210, 0 )",
 		"alpha": 1,
 		"borderColor": "#000000",
 		"borderWidth": 0,
@@ -13,7 +13,38 @@
         "marginRight": 16,
         "marginTop": 16,
         "marginBottom": 16,
-        "image": "imageview_placeholder.png",
+        "image": "imageview_preview.png",
+		"imageFillType": "STRETCH",
+        "flexProps": {
+            "alignSelf": "AUTO",
+            "positionType": "RELATIVE"
+        },
+        "&-small": {
+            "width": 100
+        },
+        "&-medium": {
+            "width": 250
+        },
+        "&-large": {
+            "width": 350
+        }
+    },
+    ".imageView": {
+		"height": 343,
+		"width": null,
+		"touchEnabled": true,
+		"visible": true,
+		"backgroundColor": "rgba( 210, 210, 210, 0 )",
+		"alpha": 1,
+		"borderColor": "#000000",
+		"borderWidth": 0,
+		"borderRadius": 8,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "marginBottom": 16,
+        "image": "imageview_preview.png",
+		"imageFillType": "STRETCH",
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
