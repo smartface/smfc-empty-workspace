@@ -1,7 +1,7 @@
 {
     ".sf-label": {
-        "width": 130,
         "height": 22,
+        "width": null,
         "touchEnabled": true,
         "visible": true,
         "multiline": false,
@@ -16,7 +16,7 @@
         "marginTop": 16,
         "marginBottom": 16,
 		"font": {
-			"size": 16,
+			"size": 17,
 			"bold": true,
 			"italic": false,
 			"family": "SFProText",

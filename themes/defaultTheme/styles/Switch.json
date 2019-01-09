@@ -17,6 +17,10 @@
         },
         "minHeight": 31,
         "minWidth": 60,
+        "marginLeft": 16,
+        "marginRight": 16,
+        "marginTop": 16,
+        "marginBottom": 16,
         "&-small": {
             "width": 100
         },
