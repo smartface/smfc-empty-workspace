@@ -8,6 +8,8 @@
 		"alpha": 1,
 		"borderColor": "#000000",
 		"borderWidth": 0,
+        "marginTop": 1,
+        "marginBottom": 1,
 		"flexProps": {
 			"alignSelf": "AUTO",
 			"direction": "INHERIT",

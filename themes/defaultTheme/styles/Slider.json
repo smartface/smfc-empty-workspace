@@ -17,10 +17,8 @@
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
         },
-        "marginLeft": 16,
-        "marginRight": 16,
-        "marginTop": 16,
-        "marginBottom": 16,
+        "marginTop": 1,
+        "marginBottom": 1,
         "minHeight": 40,
         "&-small": {
             "width": 100

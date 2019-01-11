@@ -9,10 +9,8 @@
 		"borderColor": "#000000",
 		"borderWidth": 0,
 		"borderRadius": 8,
-        "marginLeft": 16,
-        "marginRight": 16,
-        "marginTop": 16,
-        "marginBottom": 16,
+        "marginTop": 1,
+        "marginBottom": 1,
         "image": "imageview_preview.png",
 		"imageFillType": "STRETCH",
         "flexProps": {

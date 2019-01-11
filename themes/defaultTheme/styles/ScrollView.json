@@ -11,10 +11,8 @@
 		"borderRadius": 8,
 		"scrollBarEnabled": true,
 		"align": "VERTICAL",
-		"marginLeft": 16,
-		"marginRight": 16,
-		"marginTop": 16,
-		"marginBottom": 16,
+        "marginTop": 1,
+        "marginBottom": 1,
 		"flexProps": {
 			"alignSelf": "AUTO",
 			"direction": "INHERIT",

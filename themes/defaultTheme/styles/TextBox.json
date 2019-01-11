@@ -11,10 +11,8 @@
         "borderRadius": 4,
         "textColor": "#000000",
         "textAlignment": "MIDLEFT",
-        "marginLeft": 16,
-        "marginRight": 16,
-        "marginTop": 16,
-        "marginBottom": 16,
+        "marginTop": 1,
+        "marginBottom": 1,
         "font": {
             "size": 16,
             "bold": false,

@@ -2,7 +2,7 @@
     ".sf-switch": {
         "width": 60,
         "touchEnabled": true,
-        "toggle": false,
+        "toggle": true,
         "android": {
             "toggleOffColor": "#EEEEEE"
         },
@@ -17,10 +17,8 @@
         },
         "minHeight": 31,
         "minWidth": 60,
-        "marginLeft": 16,
-        "marginRight": 16,
-        "marginTop": 16,
-        "marginBottom": 16,
+        "marginTop": 1,
+        "marginBottom": 1,
         "&-small": {
             "width": 100
         },
@@ -34,7 +32,7 @@
     ".switch": {
         "width": 60,
         "touchEnabled": true,
-        "toggle": false,
+        "toggle": true,
         "android": {
             "toggleOffColor": "#EEEEEE"
         },

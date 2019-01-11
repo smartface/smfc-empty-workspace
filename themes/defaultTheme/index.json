@@ -4,6 +4,7 @@
         "Button": ".sf-button",
         "FlexLayout": ".sf-flexLayout",
         "HeaderBar": ".sf-headerBar",
+        "GifImageView": ".sf-gifImageView",
         "ImageView": ".sf-imageView",
         "Label": ".sf-label",
         "ListView": ".sf-listView",
@@ -22,6 +23,7 @@
         "ShimmerFlexLayout": ".sf-himmerFlexLayout",
         "ListViewItem": ".sf-listViewItem",
         "GridView": ".sf-gridView",
-        "GridViewItem": ".sf-gridViewItem"
+        "GridViewItem": ".sf-gridViewItem",
+        "View": ".sf-view"
     }
 }

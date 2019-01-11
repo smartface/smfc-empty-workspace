@@ -1,17 +1,17 @@
 {
-    ".sf-textView": {
-        "width": null,
-        "height": 131,
-        "touchEnabled": true,
-        "visible": true,
-        "multiline": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
-        "textAlignment": "MIDLEFT",
+    ".sf-gifImageView": {
+		"height": 343,
+		"width": null,
+		"touchEnabled": true,
+		"visible": true,
+		"backgroundColor": "rgba( 210, 210, 210, 0 )",
+		"alpha": 1,
+		"borderColor": "#000000",
+		"borderWidth": 0,
+		"borderRadius": 8,
         "marginTop": 1,
         "marginBottom": 1,
+		"imageFillType": "STRETCH",
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -26,21 +26,21 @@
             "width": 350
         }
     },
-    ".textView": {
-        "width": null,
-        "height": 131,
-        "touchEnabled": true,
-        "visible": true,
-        "multiline": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
-        "textAlignment": "MIDLEFT",
+    ".gifImageView": {
+		"height": 343,
+		"width": null,
+		"touchEnabled": true,
+		"visible": true,
+		"backgroundColor": "rgba( 210, 210, 210, 0 )",
+		"alpha": 1,
+		"borderColor": "#000000",
+		"borderWidth": 0,
+		"borderRadius": 8,
         "marginLeft": 16,
         "marginRight": 16,
         "marginTop": 16,
         "marginBottom": 16,
+		"imageFillType": "STRETCH",
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
