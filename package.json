@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"@smartface/smartface.ui-editor": "6.13.1-alpha.5"
+		"@smartface/smartface.ui-editor": "6.13.1-alpha.6"
 	},
 	"marketplace-assets": {}
 }
