@@ -40,5 +40,6 @@ SMF.i18n.defineLanguage('tr', {
 	"useFaceIDTitle": "FaceID kullan",
 	"useFaceIDMessage": "Gelecekteki oturum açmalarında FaceID kullanmak ister misin?",
 	"scanFaceIDTitle": "FaceID ile oturum aç",
-	"scanFaceIDMessage": "Yüzünü tarat"
+	"scanFaceIDMessage": "Yüzünü tarat",
+	"chooseNavigationApp": "Navigasyon uygulaması seç"
 });
