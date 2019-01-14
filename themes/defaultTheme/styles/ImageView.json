@@ -11,7 +11,6 @@
 		"borderRadius": 8,
         "marginTop": 1,
         "marginBottom": 1,
-        "image": "imageview_preview.png",
 		"imageFillType": "STRETCH",
         "flexProps": {
             "alignSelf": "AUTO",
@@ -35,7 +34,6 @@
 		"backgroundColor": "rgba( 210, 210, 210, 0 )",
 		"alpha": 1,
 		"borderColor": "#000000",
-        "image": "imageview_preview.png",
 		"imageFillType": "STRETCH",
         "flexProps": {
             "alignSelf": "AUTO",

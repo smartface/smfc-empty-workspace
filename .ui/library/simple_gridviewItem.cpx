@@ -11,7 +11,6 @@
 					"67de-5d59-e18c-7727",
 					"e92d-12a6-d5ab-b6da"
 				],
-				"isRemovable": false,
 				"name": "simple_gridviewItem",
 				"parent": "57f4-201f-4bfc-5fc6"
 			},
@@ -25,7 +24,7 @@
 			"className": ".sf-imageView .sf-gridViewItem-simple-preview",
 			"id": "58e6-e69e-a1c1-d4b9",
 			"props": {
-				"autoHeight": 343.4782608695652,
+				"autoHeight": 0,
 				"children": [],
 				"name": "imgPreview",
 				"parent": "aea8-55c1-833e-4baa"
@@ -35,13 +34,15 @@
 			},
 			"type": "ImageView",
 			"userProps": {
-				"autoHeight": 343.4782608695652
+				"autoHeight": 0
 			}
 		},
 		{
 			"className": ".sf-label .sf-gridViewItem-simple-title",
 			"id": "67de-5d59-e18c-7727",
 			"props": {
+				"autoHeight": 20.652173913043477,
+				"autoWidth": 108.18614130434783,
 				"children": [],
 				"name": "lblTitle",
 				"parent": "aea8-55c1-833e-4baa",
@@ -52,6 +53,8 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"autoHeight": 20.652173913043477,
+				"autoWidth": 108.18614130434783,
 				"text": "Grid Title Here"
 			}
 		},
@@ -59,6 +62,8 @@
 			"className": ".sf-label .sf-gridViewItem-simple-subtitle",
 			"id": "e92d-12a6-d5ab-b6da",
 			"props": {
+				"autoHeight": 18.478260869565215,
+				"autoWidth": 107.33695652173913,
 				"children": [],
 				"name": "lblSubtitle",
 				"parent": "aea8-55c1-833e-4baa",
@@ -69,6 +74,8 @@
 			},
 			"type": "Label",
 			"userProps": {
+				"autoHeight": 18.478260869565215,
+				"autoWidth": 107.33695652173913,
 				"text": "Grid subtitle here"
 			}
 		}
