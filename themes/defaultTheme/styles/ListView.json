@@ -2,6 +2,8 @@
     ".sf-listView": {
         "height": 216,
 		"width": null,
+        "marginTop": 1,
+        "marginBottom": 1,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
