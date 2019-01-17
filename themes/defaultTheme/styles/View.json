@@ -4,6 +4,7 @@
 		"width": null,
         "marginTop": 1,
         "marginBottom": 1,
+        "backgroundColor":"rgb(210, 210,210)",
 		"flexProps": {
 			"positionType": "RELATIVE"
 		},
