@@ -4,7 +4,9 @@
 		"width": 375,
 		"flexProps": {
 			"alignSelf": "STRETCH",
-			"positionType": "RELATIVE"
+			"positionType": "RELATIVE",
+			"alignContent": "STRETCH",
+			"alignItems": "STRETCH"
 		},
 		"&-small": {
 			"width": 100
@@ -21,7 +23,9 @@
 		"width": 375,
 		"flexProps": {
 			"alignSelf": "STRETCH",
-			"positionType": "RELATIVE"
+			"positionType": "RELATIVE",
+			"alignContent": "STRETCH",
+			"alignItems": "STRETCH"
 		},
 		"&-small": {
 			"width": 100
