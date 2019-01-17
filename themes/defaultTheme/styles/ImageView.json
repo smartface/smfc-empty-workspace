@@ -2,13 +2,6 @@
     ".sf-imageView": {
 		"height": 343,
 		"width": null,
-		"touchEnabled": true,
-		"visible": true,
-		"backgroundColor": "rgba( 210, 210, 210, 0 )",
-		"alpha": 1,
-		"borderColor": "#000000",
-		"borderWidth": 0,
-		"borderRadius": 8,
         "marginTop": 1,
         "marginBottom": 1,
 		"imageFillType": "STRETCH",
@@ -29,11 +22,6 @@
     ".imageView": {
 		"height": 343,
 		"width": null,
-		"touchEnabled": true,
-		"visible": true,
-		"backgroundColor": "rgba( 210, 210, 210, 0 )",
-		"alpha": 1,
-		"borderColor": "#000000",
 		"imageFillType": "STRETCH",
         "flexProps": {
             "alignSelf": "AUTO",

@@ -2,19 +2,8 @@
     ".sf-mapView": {
         "height": 343,
         "width": null,
-        "touchEnabled": true,
-        "rotateEnabled": true,
-        "compassEnabled": true,
-        "scrollEnabled": true,
-        "type": "NORMAL",
-        "visible": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
         "marginTop": 1,
         "marginBottom": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
-		"borderRadius": 8,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -32,17 +21,6 @@
     ".mapView": {
         "height": 343,
         "width": null,
-        "touchEnabled": true,
-        "rotateEnabled": true,
-        "compassEnabled": true,
-        "scrollEnabled": true,
-        "type": "NORMAL",
-        "visible": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
-		"borderRadius": 8,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"

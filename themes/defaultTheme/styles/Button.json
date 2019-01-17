@@ -2,10 +2,6 @@
     ".sf-button": {
         "width": null,
         "height": 50,
-        "visible": true,
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
 		"borderRadius": 8,
         "textColor": "#FFFFFF",
         "textAlignment": "MIDCENTER",
@@ -55,10 +51,6 @@
      ".button": {
         "width": null,
         "height": 50,
-        "visible": true,
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
 		"borderRadius": 8,
         "textColor": "#FFFFFF",
         "textAlignment": "MIDCENTER",

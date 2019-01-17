@@ -1,16 +1,12 @@
 {
     ".sf-textArea": {
-        "height": 78,
+        "height": 120,
         "width": null,
-        "touchEnabled": true,
-        "visible": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
         "borderColor": "#00a1f1",
         "borderWidth": 1,
         "borderRadius": 4,
         "textColor": "#000000",
-        "textAlignment": "TOPLEFT",
+        "textAlignment": "MIDLEFT",
         "marginTop": 1,
         "marginBottom": 1,
         "font": {
@@ -35,15 +31,11 @@
         }
     },
     ".textArea": {
-        "height": 78,
+        "height": 120,
         "width": null,
-        "touchEnabled": true,
-        "visible": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
         "borderColor": "#00a1f1",
         "textColor": "#000000",
-        "textAlignment": "TOPLEFT",
+        "textAlignment": "MIDLEFT",
         "font": {
             "size": 16,
             "bold": false,

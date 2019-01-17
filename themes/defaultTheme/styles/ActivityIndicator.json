@@ -1,20 +1,14 @@
 {
     ".sf-activityIndicator": {
-        "touchEnabled": true,
         "width": 42,
         "height": 42,
         "color": "#00a1f1",
-        "visible": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
         "flexProps": {
             "positionType": "RELATIVE",
             "alignSelf": "CENTER"
         },
         "ios":{
-            "activityIndicatorViewStyle": "NORMAL"
+            "activityIndicatorViewStyle": "LARGE"
         },
         "minHeight": 21,
         "minWidth": 21,
@@ -29,21 +23,15 @@
         }
     },
     ".activityIndicator": {
-        "touchEnabled": true,
         "width": 42,
         "height": 42,
         "color": "#00a1f1",
-        "visible": true,
-        "backgroundColor": "rgba(255,255,255,0)",
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
         "flexProps": {
             "positionType": "RELATIVE",
             "alignSelf": "CENTER"
         },
         "ios":{
-            "activityIndicatorViewStyle": "NORMAL"
+            "activityIndicatorViewStyle": "LARGE"
         },
         "minHeight": 21,
         "minWidth": 21,

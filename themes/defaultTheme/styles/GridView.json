@@ -2,12 +2,6 @@
     ".sf-gridView": {
 		"height": 343,
 		"width": null,
-		"touchEnabled": true,
-		"visible": true,
-		"backgroundColor": "rgba(215,215,215,0)",
-		"alpha": 1,
-		"borderColor": "#000000",
-		"borderWidth": 0,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -25,12 +19,6 @@
     ".gridView": {
 		"height": 343,
 		"width": null,
-		"touchEnabled": true,
-		"visible": true,
-		"backgroundColor": "rgba(215,215,215,0)",
-		"alpha": 1,
-		"borderColor": "#000000",
-		"borderWidth": 0,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"

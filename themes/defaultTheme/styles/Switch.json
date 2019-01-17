@@ -1,16 +1,10 @@
 {
     ".sf-switch": {
         "width": 60,
-        "touchEnabled": true,
-        "toggle": true,
         "android": {
             "toggleOffColor": "#EEEEEE"
         },
         "toggleOnColor": "#00a1f1",
-        "visible": true,
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -31,16 +25,10 @@
     },
     ".switch": {
         "width": 60,
-        "touchEnabled": true,
-        "toggle": true,
         "android": {
             "toggleOffColor": "#EEEEEE"
         },
         "toggleOnColor": "#00a1f1",
-        "visible": true,
-        "alpha": 1,
-        "borderColor": "#000000",
-        "borderWidth": 0,
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"

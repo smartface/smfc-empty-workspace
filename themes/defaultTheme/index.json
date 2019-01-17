@@ -20,7 +20,7 @@
         "VideoView": ".sf-videoView",
         "WebView": ".sf-webView",
         "ScrollView": ".sf-scrollView",
-        "ShimmerFlexLayout": ".sf-himmerFlexLayout",
+        "ShimmerFlexLayout": ".sf-shimmerFlexLayout",
         "ListViewItem": ".sf-listViewItem",
         "GridView": ".sf-gridView",
         "GridViewItem": ".sf-gridViewItem",

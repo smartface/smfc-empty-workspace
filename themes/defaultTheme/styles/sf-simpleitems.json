@@ -6,9 +6,7 @@
                     "justifyContent": "FLEX_START",
                     "alignItems": "STRETCH"
                 },
-                "height": 227.17391304347825,
-                "left": 107.6086956521739,
-                "top": 121.73913043478261,
+                "height": 227,
                 "width": 165,
                 "&-preview": {
                     "backgroundColor": "rgba( 255, 255, 255, 0 )",
@@ -16,8 +14,6 @@
                     "image": "imageview_preview.png",
                     "imageFillType": "ASPECTFIT",
                     "marginBottom": null,
-                    "marginLeft": null,
-                    "marginRight": null,
                     "marginTop": null,
                     "width": null
                 },
@@ -35,8 +31,6 @@
                     },
                     "height": 20,
                     "marginBottom": null,
-                    "marginLeft": null,
-                    "marginRight": null,
                     "marginTop": 13,
                     "textAlignment": "MIDCENTER",
                     "textColor": "rgba( 0, 0, 0, 1 )"
@@ -55,8 +49,6 @@
                     },
                     "height": 18,
                     "marginBottom": 12,
-                    "marginLeft": null,
-                    "marginRight": null,
                     "marginTop": null,
                     "textAlignment": "MIDCENTER",
                     "textColor": "rgba( 0, 0, 0, 1 )"
@@ -82,14 +74,14 @@
                         "style": "Regular"
                     },
                     "marginBottom": null,
-                    "marginRight": null,
+                    "marginLeft": 16,
                     "marginTop": null,
                     "textColor": "rgba( 0, 0, 0, 1 )",
                     "width": null
                 },
                 "&-chevron": {
                     "marginBottom": null,
-                    "marginLeft": null,
+                    "marginRight": 16,
                     "marginTop": null,
                     "textAlignment": "MIDRIGHT",
                     "textColor": "rgba( 0, 0, 0, 0.25 )",
@@ -114,8 +106,6 @@
                     "height": 1,
                     "left": 16,
                     "marginBottom": null,
-                    "marginLeft": null,
-                    "marginRight": null,
                     "marginTop": null,
                     "right": 0
                 }
