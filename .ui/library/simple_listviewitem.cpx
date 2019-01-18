@@ -2,7 +2,7 @@
 	"components": [
 		{
 			"className": ".sf-listViewItem .sf-listViewItem-simple",
-			"hiddenComponent": false,
+			"hiddenComponent": true,
 			"id": "1841-ff9a-b968-028d",
 			"initialized": true,
 			"props": {
@@ -20,15 +20,15 @@
 			"type": "ListViewItem",
 			"userProps": {
 				"flexProps": {},
-				"left": 8.695652173913043,
-				"top": 51.086956521739125
+				"left": 22.82608695652174,
+				"top": 50
 			}
 		},
 		{
 			"className": ".sf-label .sf-listViewItem-simple-title",
 			"id": "24ca-f21f-dfb6-5dc9",
 			"props": {
-				"autoHeight": 22.82608695652174,
+				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
 				"children": [],
 				"name": "lblTitle",
@@ -40,8 +40,9 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 22.82608695652174,
+				"autoHeight": 51.086956521739125,
 				"autoWidth": 134.91847826086956,
+				"marginLeft": 16,
 				"text": "ListView Cell Title"
 			}
 		},
@@ -49,8 +50,8 @@
 			"className": ".sf-label .sf-listViewItem-simple-chevron",
 			"id": "8474-887d-3102-405e",
 			"props": {
-				"autoHeight": 22.82608695652174,
-				"autoWidth": 9.222146739130434,
+				"autoHeight": 51.086956521739125,
+				"autoWidth": 10.478940217391305,
 				"children": [],
 				"name": "lblChevron",
 				"parent": "1841-ff9a-b968-028d",
@@ -61,8 +62,9 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 22.82608695652174,
-				"autoWidth": 9.222146739130434,
+				"autoHeight": 51.086956521739125,
+				"autoWidth": 10.478940217391305,
+				"marginRight": 16,
 				"text": ""
 			}
 		},
