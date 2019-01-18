@@ -10,7 +10,6 @@
                 "width": 165,
                 "&-preview": {
                     "height": 165,
-					"width": 165,
 					"flexProps": {
 						"alignSelf": "CENTER"
 					},
