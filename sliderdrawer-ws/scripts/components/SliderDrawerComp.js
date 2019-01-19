@@ -6,13 +6,15 @@ const OPTIONS_DATA = [{
   name: "option1",
   text: "Page 1 Button",
   routePath: "/pages/page1",
+  routeData: { message: "page1"},
   userProps: {
     marginTop: 61
   }
 }, {
   name: "option2",
   text: "Page 2 Button",
-  routePath: "/pages/page2"
+  routePath: "/pages/page2",
+  routeData: { message: "page2"}
 }];
 
 const SliderDrawerComp = extend(SliderDrawerCompDesign)(
@@ -35,7 +37,7 @@ function onTouchEnded(optionList, selectedOption) {
       if (!option.enabled) {
         option.enabled = true; 
         let url = this.__router.getState().url;
-        url !== option.routePath && this.__router.push(option.routePath);
+        url !== option.routePath && this.__router.push(option.routePath, option.routeData);
       }
     }
     else if (option.enabled) {
@@ -53,6 +55,7 @@ function createOptions(optionsData) {
     tempOption = new Option(option.userProps);
     tempOption.text = option.text;
     tempOption.routePath = option.routePath;
+    tempOption.routeData = option.routeData;
     tempOption.onTouchEnded = onTouchEnded.bind(this, optionList, tempOption);
     this.addChild(tempOption);
     this.children[option.name] = tempOption;

@@ -29,5 +29,5 @@ notifier.subscribe((connectionType) => {
 
 const router = require("./routes");
 
-router.push("/pages/page1");
+router.push("/pages/page1", { message: "page1"});
 

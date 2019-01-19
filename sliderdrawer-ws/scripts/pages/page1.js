@@ -32,6 +32,7 @@ function onShow(superOnShow) {
     superOnShow();
     this.headerBar.titleLayout.applyLayout(); //TODO IOS-2729
     this._sliderDrawer.activateOption(0);
+    console.info(this._routeData.message);
 }
 
 function onLeftItemPress() {
