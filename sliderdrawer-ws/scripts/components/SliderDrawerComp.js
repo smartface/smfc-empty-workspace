@@ -37,7 +37,7 @@ function onTouchEnded(optionList, selectedOption) {
       if (!option.enabled) {
         option.enabled = true; 
         let url = this.__router.getState().url;
-        url !== option.routePath && this.__router.push(option.routePath, option.routeData);
+        url !== option.routePath && this.__router.push(option.routePath, option.routeData, false);
       }
     }
     else if (option.enabled) {
