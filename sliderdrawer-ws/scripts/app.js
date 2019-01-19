@@ -29,5 +29,5 @@ notifier.subscribe((connectionType) => {
 
 const router = require("./routes");
 
-router.push("/btb/tab1/page1");
+router.push("/pages/page1");
 
