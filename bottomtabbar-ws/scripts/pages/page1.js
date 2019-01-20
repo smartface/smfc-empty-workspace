@@ -29,6 +29,7 @@ const Page1 = extend(Page1Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
+    console.log("page1");
 }
 /**
  * 

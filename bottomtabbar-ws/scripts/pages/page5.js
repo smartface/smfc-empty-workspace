@@ -23,6 +23,7 @@ const Page5 = extend(Page5Design)(
  */
 function onShow(superOnShow) {
   superOnShow();
+  console.log("page5");
 }
 
 /**

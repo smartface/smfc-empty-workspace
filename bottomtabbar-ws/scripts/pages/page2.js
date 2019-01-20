@@ -29,9 +29,7 @@ const Page2 = extend(Page2Design)(
 function onShow(superOnShow) {
     const page = this;
     superOnShow();
-    if (!page._routeData)
-        return;
-    console.log(page._routeData.message);
+    console.log("page2");
 }
 
 /**
