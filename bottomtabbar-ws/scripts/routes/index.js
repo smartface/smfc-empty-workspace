@@ -2,6 +2,7 @@ const createPageContext = require("@smartface/contx/lib/smartface/pageContext");
 const Image = require("sf-core/ui/image");
 const Color = require("sf-core/ui/color");
 const Application = require("sf-core/application");
+const OS = require('sf-core/device/system').OS;
 const {
     NativeRouter: Router,
     NativeStackRouter: StackRouter,
@@ -9,7 +10,7 @@ const {
     Route
 } = require("@smartface/router");
 
-
+var activePage = {};
 class StylingComponent {
     subscribeContext({
         type, // context type
@@ -59,6 +60,10 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab1/page1",
+                    routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page1";
+                    },
                     build: (router, route) => {
                         let Page1 = require("pages/page1");
                         return new Page1(route.getState().routeData, router);
@@ -74,6 +79,10 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab2/page2",
+                    routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page2";
+                    },
                     build: (router, route) => {
                         let Page2 = require("pages/page2");
                         return new Page2(route.getState().routeData, router);
@@ -88,6 +97,10 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab3/page3",
+                    routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page3";
+                    },
                     build: (router, route) => {
                         let Page3 = require("pages/page3");
                         return new Page3(route.getState().routeData, router);
@@ -102,6 +115,10 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab4/page4",
+                    routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page4";
+                    },
                     build: (router, route) => {
                         let Page4 = require("pages/page4");
                         return new Page4(route.getState().routeData, router);
@@ -116,6 +133,10 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab5/page5",
+                    routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page5";
+                    },
                     build: (router, route) => {
                         let Page5 = require("pages/page5");
                         return new Page5(route.getState().routeData, router);
@@ -135,5 +156,13 @@ const router = Router.of({
         bottomTabBarRouter
     ]
 });
-
+if (OS === "Android") { // Android back button
+    Application.android.onBackButtonPressed = () => {
+        switch (activePage.name) {
+            case 'page1':
+                Application.exit();
+                break;
+        }
+    };
+}
 module.exports = router;

@@ -60,14 +60,12 @@ function onLoad(superOnLoad) {
     })]);
     if (System.OS === "Android") {
         headerBar = this.headerBar;
-        let onBackButtonPress = () => {
-            this._router.goBack();
-        };
         headerBar.setLeftItem(new HeaderBarItem({
-            onPress: onBackButtonPress,
+            onPress: () => {
+                this._router.goBack();
+            },
             image: Image.createFromFile("images://arrow_back.png")
         }));
-        Application.android.onBackButtonPressed = onBackButtonPress;
     }
     else {
         headerBar = this.parentController.headerBar;

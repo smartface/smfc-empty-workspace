@@ -1,3 +1,5 @@
+const Application = require("sf-core/application");
+const OS = require('sf-core/device/system').OS;
 const {
     NativeRouter: Router,
     NativeStackRouter: StackRouter,
@@ -5,6 +7,7 @@ const {
 } = require("@smartface/router");
 const sliderDrawerWrapper = require("../sliderdrawer-comp");
 
+var activePage = {};
 const router = Router.of({
     path: "/",
     isRoot: true,
@@ -15,6 +18,8 @@ const router = Router.of({
                 Route.of({
                     path: "/pages/page1",
                     routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page1";
                         sliderDrawerWrapper.enabled = true;
                         sliderDrawerWrapper.hide();
                     },
@@ -28,6 +33,8 @@ const router = Router.of({
                 Route.of({
                     path: "/pages/page2",
                     routeDidEnter: (router, route) => {
+                        activePage.router = router;
+                        activePage.name = "page2";
                         sliderDrawerWrapper.enabled = true;
                         sliderDrawerWrapper.hide();
                     },
@@ -42,6 +49,17 @@ const router = Router.of({
         })
     ]
 });
-
+if (OS === "Android") { // Android back button
+    Application.android.onBackButtonPressed = () => {
+        switch (activePage.name) {
+            case 'page2':
+                activePage.router.goBack();
+                break;
+            case 'page1':
+                Application.exit();
+                break;
+        }
+    };
+}
 sliderDrawerWrapper.setRouter(router);
 module.exports = router;
