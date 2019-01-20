@@ -3,7 +3,7 @@ const {
     NativeStackRouter: StackRouter,
     Route
 } = require("@smartface/router");
-const sliderDrawerWrapper = require("./sliderdrawer-comp");
+const sliderDrawerWrapper = require("../sliderdrawer-comp");
 
 const router = Router.of({
     path: "/",

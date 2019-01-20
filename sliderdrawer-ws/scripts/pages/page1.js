@@ -15,6 +15,7 @@ const Page1 = extend(Page1Design)(
         // Initalizes super class for this page scope
         _super(this);
         this._router = router;
+        this._routeData = routeData;
         this._sliderDrawer = sliderDrawer;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
