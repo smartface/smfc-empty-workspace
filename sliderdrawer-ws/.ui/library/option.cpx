@@ -1,0 +1,79 @@
+{
+	"components": [
+		{
+			"className": ".flexLayout .sliderDrawerComp_option",
+			"id": "334c-ae32-7231-acd0",
+			"initialized": true,
+			"props": {
+				"children": [
+					"a504-c9d7-289d-1076",
+					"3086-5722-f54b-b041",
+					"56b0-6640-c634-ca92"
+				],
+				"name": "option",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {},
+				"left": 20.224719101123597,
+				"top": 794.3820224719101
+			}
+		},
+		{
+			"className": ".flexLayout .sliderDrawerComp_option_leftWall .sliderDrawerComp_option_leftWall.passive",
+			"id": "a504-c9d7-289d-1076",
+			"props": {
+				"children": [],
+				"name": "leftWall",
+				"parent": "334c-ae32-7231-acd0",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".flexLayout .sliderDrawerComp_option_divider",
+			"id": "3086-5722-f54b-b041",
+			"props": {
+				"children": [],
+				"name": "divider",
+				"parent": "334c-ae32-7231-acd0"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "FlexLayout",
+			"userProps": {}
+		},
+		{
+			"className": ".label .sliderDrawerComp_option_title .sliderDrawerComp_option_title.passive",
+			"id": "56b0-6640-c634-ca92",
+			"props": {
+				"autoHeight": 22.47191011235955,
+				"children": [],
+				"name": "title",
+				"parent": "334c-ae32-7231-acd0",
+				"text": "Page 1 Button",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"autoHeight": 22.47191011235955,
+				"text": "Page 1 Button",
+				"usePageVariable": true
+			}
+		}
+	]
+}
