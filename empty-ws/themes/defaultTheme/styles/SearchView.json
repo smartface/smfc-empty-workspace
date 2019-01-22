@@ -12,13 +12,13 @@
         "textAlignment": "MIDLEFT",
         "marginTop": 1,
         "marginBottom": 1,
-		"font": {
-			"size": 17,
-			"bold": true,
-			"italic": false,
-			"family": "SFProText",
-			"style": "Regular"
-		},
+        "font": {
+            "size": 17,
+            "bold": true,
+            "italic": false,
+            "family": "SFProText",
+            "style": "Regular"
+        },
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -46,13 +46,13 @@
         "cursorColor": "rgba(66,107,242,1)",
         "hintColor": "rgb(142,142,147)",
         "textAlignment": "MIDLEFT",
-		"font": {
-			"size": 17,
-			"bold": true,
-			"italic": false,
-			"family": "SFProText",
-			"style": "Regular"
-		},
+        "font": {
+            "size": 17,
+            "bold": true,
+            "italic": false,
+            "family": "SFProText",
+            "style": "Regular"
+        },
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -70,5 +70,11 @@
         "&-large": {
             "width": 350
         }
+    },
+    ".default_searchView": {
+        "touchEnabled": true,
+        "borderColor": "rgba(0,0,0,1)",
+        "borderWidth": 0,
+        "textAlignment": "MIDLEFT"
     }
 }

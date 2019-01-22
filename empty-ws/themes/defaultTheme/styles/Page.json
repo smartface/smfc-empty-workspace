@@ -26,5 +26,8 @@
         },
         "backgroundColor": "#FFFFFF",
         "orientation": "PORTRAIT"
+    },
+    ".default_page": {
+        "orientation": "PORTRAIT"
     }
 }

@@ -12,5 +12,8 @@
         },
         "style": "LIGHTCONTENT",
         "visible": true
+    },
+    ".default_statusBar": {
+        "visible": true
     }
 }

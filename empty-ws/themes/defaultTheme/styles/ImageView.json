@@ -4,7 +4,7 @@
 		"width": null,
         "marginTop": 1,
         "marginBottom": 1,
-		"imageFillType": "ASPECTFIT",
+		"imageFillType": "NORMAL",
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -22,7 +22,7 @@
     ".imageView": {
 		"height": 343,
 		"width": null,
-		"imageFillType": "ASPECTFIT",
+		"imageFillType": "NORMAL",
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"

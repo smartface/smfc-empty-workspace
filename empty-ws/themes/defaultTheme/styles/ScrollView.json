@@ -52,5 +52,9 @@
 		"&-large": {
 			"width": 350
 		}
+	},
+	".default_scrollView": {
+		"scrollBarEnabled": true,
+		"align": "VERTICAL"
 	}
 }

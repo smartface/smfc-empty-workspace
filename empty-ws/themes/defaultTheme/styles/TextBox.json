@@ -13,8 +13,8 @@
             "size": 16,
             "bold": false,
             "italic": false,
-			"family": "SFProText",
-			"style": "Regular"
+            "family": "SFProText",
+            "style": "Regular"
         },
         "flexProps": {
             "alignSelf": "AUTO",
@@ -40,8 +40,8 @@
             "size": 16,
             "bold": false,
             "italic": false,
-			"family": "SFProText",
-			"style": "Regular"
+            "family": "SFProText",
+            "style": "Regular"
         },
         "flexProps": {
             "alignSelf": "AUTO",
@@ -56,5 +56,8 @@
         "&-large": {
             "width": 350
         }
+    },
+    ".default_textBox": {
+        "textAlignment": "MIDLEFT"
     }
 }

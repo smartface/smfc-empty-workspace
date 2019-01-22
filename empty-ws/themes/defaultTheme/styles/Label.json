@@ -7,13 +7,13 @@
         "textAlignment": "MIDLEFT",
         "marginTop": 1,
         "marginBottom": 1,
-		"font": {
-			"size": 17,
-			"bold": true,
-			"italic": false,
-			"family": "SFProText",
-			"style": "Semibold"
-		},
+        "font": {
+            "size": 17,
+            "bold": true,
+            "italic": false,
+            "family": "SFProText",
+            "style": "Semibold"
+        },
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -21,24 +21,24 @@
         "&-small": {
             "width": 100,
             "height": 46,
-            "font":{
+            "font": {
                 "size": 12
             }
         },
         "&-medium": {
             "width": 190,
             "height": 70,
-            "font":{
+            "font": {
                 "size": 24,
-			    "style": "Medium"
+                "style": "Medium"
             }
         },
         "&-large": {
             "width": 255,
             "height": 90,
-            "font":{
+            "font": {
                 "size": 32,
-			    "style": "Medium"
+                "style": "Medium"
             }
         }
     },
@@ -48,13 +48,13 @@
         "multiline": false,
         "textColor": "#00a1f1",
         "textAlignment": "MIDLEFT",
-		"font": {
-			"size": 16,
-			"bold": true,
-			"italic": false,
-			"family": "SFProText",
-			"style": "Semibold"
-		},
+        "font": {
+            "size": 16,
+            "bold": true,
+            "italic": false,
+            "family": "SFProText",
+            "style": "Semibold"
+        },
         "flexProps": {
             "alignSelf": "AUTO",
             "positionType": "RELATIVE"
@@ -62,25 +62,29 @@
         "&-small": {
             "width": 100,
             "height": 16,
-            "font":{
+            "font": {
                 "size": 12
             }
         },
         "&-medium": {
             "width": 190,
             "height": 30,
-            "font":{
+            "font": {
                 "size": 24,
-			    "style": "Medium"
+                "style": "Medium"
             }
         },
         "&-large": {
             "width": 255,
             "height": 50,
-            "font":{
+            "font": {
                 "size": 32,
-			    "style": "Medium"
+                "style": "Medium"
             }
         }
+    },
+    ".default_label": {
+        "textAlignment": "MIDLEFT",
+        "multiline": false
     }
 }
