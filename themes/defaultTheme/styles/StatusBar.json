@@ -1,9 +1,0 @@
-{
-    ".statusBar": {
-        "android": {
-            "color": "#00A1F1"
-        },
-        "style": "DEFAULT",
-        "visible": true
-    }
-}

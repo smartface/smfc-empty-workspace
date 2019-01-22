@@ -1,0 +1,57 @@
+{
+	".sliderDrawerComp": {
+		"&_option": {
+			"width": null,
+			"height": 66,
+			"backgroundColor": "rgba( 255, 255, 255, 0 )",
+			"&_divider": {
+				"maxHeight": 2,
+				"borderWidth": 1,
+				"borderColor": "rgba( 255, 255, 255, 0.15 )",
+				"width": null,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"left": 31,
+				"right": 0,
+				"bottom": 0,
+				"backgroundColor": "rgba( 255, 255, 255, 0 )"
+			},
+			"&_leftWall": {
+				"width": 4,
+				"height": 50,
+				"flexProps": {
+					"positionType": "ABSOLUTE"
+				},
+				"top": 8,
+				".passive": {
+					"backgroundColor": "rgba( 255, 255, 255, 0 )"
+				}
+			},
+			"&_title": {
+				"width": null,
+				"height": null,
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"marginLeft": 31,
+				"font": {
+					"size": 18
+				},
+				"textColor": "#ffffff",
+				".passive": {
+					"textColor": "rgba( 255, 255, 255, 0.7 )"
+				}
+			}
+		},
+		"backgroundColor": {
+			"startColor": "rgb(0,119, 199)",
+			"endColor": "#00a1f1",
+			"direction": "VERTICAL"
+		},
+		"height": null,
+		"flexProps": {
+			"flexGrow": 1
+		}
+	}
+}
