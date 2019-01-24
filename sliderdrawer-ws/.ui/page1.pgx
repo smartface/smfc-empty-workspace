@@ -63,7 +63,7 @@
 			"className": ".label",
 			"id": "980522a9",
 			"props": {
-				"autoHeight": 40.229885057471265,
+				"autoHeight": 90.5999984741211,
 				"children": [],
 				"name": "lbl",
 				"parent": "e891b86d",
@@ -72,7 +72,7 @@
 			},
 			"type": "Label",
 			"userProps": {
-				"autoHeight": 40.229885057471265,
+				"autoHeight": 90.5999984741211,
 				"backgroundColor": "rgba( 255, 255, 255, 0 )",
 				"flexProps": {
 					"marginLeft": 20,
@@ -87,7 +87,6 @@
 					"style": "Regular"
 				},
 				"height": 90,
-				"marginBottom": 10,
 				"multiline": false,
 				"text": "Page1",
 				"textAlignment": "MIDCENTER",
