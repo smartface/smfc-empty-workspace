@@ -58,6 +58,5 @@
         }
     },
     ".default_textBox": {
-        "textAlignment": "MIDLEFT"
     }
 }
