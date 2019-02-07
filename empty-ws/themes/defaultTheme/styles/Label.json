@@ -84,7 +84,6 @@
         }
     },
     ".default_label": {
-        "textAlignment": "MIDLEFT",
         "multiline": false
     }
 }
