@@ -30,12 +30,8 @@ const Page1 = extend(Page1Design)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-    const page = this;
     superOnShow();
     this.headerBar.titleLayout.applyLayout();
-    if (System.OS === "Android") {
-        setTimeout(() => page.btnNext.enabled = true, 300);
-    }
 }
 /**
  * 
