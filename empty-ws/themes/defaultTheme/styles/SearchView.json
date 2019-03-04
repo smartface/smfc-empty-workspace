@@ -74,7 +74,9 @@
     ".default_searchView": {
         "touchEnabled": true,
         "borderColor": "rgba(0,0,0,1)",
-        "borderWidth": 0,
+		"+Device:Device.os === \"Android\"": {
+			"borderWidth": 0
+		},
         "textAlignment": "MIDLEFT"
     }
 }
