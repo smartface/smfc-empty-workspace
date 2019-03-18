@@ -2,7 +2,8 @@
     ".sf-textView": {
         "width": null,
         "height": 131,
-        "multiline": true,
+        "maxLines": 1,
+        "ellipsizeMode": "END",
         "textAlignment": "MIDLEFT",
         "marginTop": 1,
         "marginBottom": 1,
@@ -23,7 +24,8 @@
     ".textView": {
         "width": null,
         "height": 131,
-        "multiline": true,
+        "maxLines": 0,
+        "ellipsizeMode": "NONE",
         "textAlignment": "MIDLEFT",
         "flexProps": {
             "alignSelf": "AUTO",

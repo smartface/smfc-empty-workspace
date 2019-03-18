@@ -2,7 +2,8 @@
     ".sf-label": {
         "height": 50,
         "width": null,
-        "multiline": false,
+        "maxLines": 1,
+        "ellipsizeMode": "END",
         "textColor": "#00a1f1",
         "textAlignment": "MIDLEFT",
         "marginTop": 1,
@@ -45,7 +46,8 @@
     ".label": {
         "width": null,
         "height": 50,
-        "multiline": false,
+        "maxLines": 0,
+        "ellipsizeMode": "NONE",
         "textColor": "#00a1f1",
         "textAlignment": "MIDLEFT",
         "font": {
