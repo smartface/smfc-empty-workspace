@@ -15,19 +15,5 @@ Application.onUnhandledError = function(e) {
 
 require("sf-extension-utils");
 require("./theme");
-const Network = require("sf-core/device/network");
-var notifier = new Network.createNotifier();
-
-notifier.subscribe((connectionType) => {
-    if (connectionType === Network.ConnectionType.NONE) {
-        alert("No Network Connection");
-    }
-});
-
-//set router to sliderdrawer for action of options.
-//go page1
-
 const router = require("./routes");
-
-router.push("/pages/page1", { message: "page1"});
-
+router.push("/pages/page1");

@@ -1,4 +1,4 @@
-const Color = require("sf-core/ui/color");
+const touch = require("sf-extension-utils/lib/touch");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const PageTitleLayout = require("components/PageTitleLayout");
 
@@ -13,14 +13,13 @@ const Page1 = extend(Page1Design)(
     function(_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
-        this._router = router;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        this.btnNext.onPress = () => {
-            this._router.push("/pages/page2");
-        };
+        touch.addPressEvent(this.btnNext, () => {
+            this.router.push("/pages/page2", { message: "Hello World!" });
+        });
     });
 
 /**
@@ -41,9 +40,12 @@ function onShow(superOnShow) {
  */
 function onLoad(superOnLoad) {
     superOnLoad();
+    this.headerBar.leftItemEnabled = false;
     this.headerBar.titleLayout = new PageTitleLayout();
-    this.headerBar.itemColor = Color.RED;
     componentContextPatch(this.headerBar.titleLayout, "titleLayout");
+    if (System.OS === "Android") {
+        this.headerBar.title = "";
+    }
 }
 
 module.exports = Page1;
