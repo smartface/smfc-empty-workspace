@@ -9,16 +9,16 @@ const {
     BottomTabBarRouter,
     Route
 } = require("@smartface/router");
+const buildExtender = require("sf-extension-utils/lib/router/buildExtender");
+require("sf-extension-utils/lib/router/goBack"); // Implements onBackButtonPressed
 
-var activePage = {};
 class StylingComponent {
     subscribeContext({
         type, // context type
         style, // style with native objects
         rawStyle // style with json objects
     }) {
-        //console.log('styling context');
-        //console.log(JSON.stringify(rawStyle));
+        // console.log(JSON.stringify(rawStyle));
         // You can assign styles below using style object
     }
 }
@@ -40,6 +40,7 @@ Application.theme(
     pageContext,
     'btbExample'
 );
+
 const starImage = Image.createFromFile("images://star_icon.png");
 const bottomTabBarRouter = BottomTabBarRouter.of({
     path: "/",
@@ -51,25 +52,23 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             selected: Color.create("#00a1f1")
         }
     }),
-    items: () => [{ title: "page1", icon: starImage }, { title: "page2", icon: starImage }, { title: "page3", icon: starImage }, { title: "page4", icon: starImage }, { title: "page5", icon: starImage }],
+    items: () => [
+        { title: "page1", icon: starImage },
+        { title: "page2", icon: starImage },
+        { title: "page3", icon: starImage },
+        { title: "page4", icon: starImage },
+        { title: "page5", icon: starImage }
+    ],
     routes: [
-        //tab1
+        // tab1
         StackRouter.of({
             path: "/btb/tab1",
             to: "/btb/tab1/page1",
             routes: [
                 Route.of({
                     path: "/btb/tab1/page1",
-                    routeDidEnter: (router, route) => {
-                        activePage.router = router;
-                        activePage.name = "page1";
-                    },
-                    build: (router, route) => {
-                        let Page1 = require("pages/page1");
-                        return new Page1(route.getState().routeData, router);
-                    }
-
-                })
+                    build: buildExtender({ pageName: "page1", singleton: true, pageProps: { shouldExit: true } })
+                }),
             ]
         }),
         // tab2
@@ -79,15 +78,8 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab2/page2",
-                    routeDidEnter: (router, route) => {
-                        activePage.router = router;
-                        activePage.name = "page2";
-                    },
-                    build: (router, route) => {
-                        let Page2 = require("pages/page2");
-                        return new Page2(route.getState().routeData, router);
-                    }
-                })
+                    build: buildExtender({ pageName: "page2", singleton: true, pageProps: { shouldExit: true } })
+                }),
             ]
         }),
         // tab3
@@ -97,15 +89,8 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab3/page3",
-                    routeDidEnter: (router, route) => {
-                        activePage.router = router;
-                        activePage.name = "page3";
-                    },
-                    build: (router, route) => {
-                        let Page3 = require("pages/page3");
-                        return new Page3(route.getState().routeData, router);
-                    }
-                })
+                    build: buildExtender({ pageName: "page3", singleton: true, pageProps: { shouldExit: true } })
+                }),
             ]
         }),
         // tab4
@@ -115,15 +100,8 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab4/page4",
-                    routeDidEnter: (router, route) => {
-                        activePage.router = router;
-                        activePage.name = "page4";
-                    },
-                    build: (router, route) => {
-                        let Page4 = require("pages/page4");
-                        return new Page4(route.getState().routeData, router);
-                    }
-                })
+                    build: buildExtender({ pageName: "page4", singleton: true, pageProps: { shouldExit: true } })
+                }),
             ]
         }),
         // tab5
@@ -133,15 +111,8 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab5/page5",
-                    routeDidEnter: (router, route) => {
-                        activePage.router = router;
-                        activePage.name = "page5";
-                    },
-                    build: (router, route) => {
-                        let Page5 = require("pages/page5");
-                        return new Page5(route.getState().routeData, router);
-                    }
-                })
+                    build: buildExtender({ pageName: "page5", singleton: true, pageProps: { shouldExit: true } })
+                }),
             ]
         })
     ]
@@ -156,13 +127,5 @@ const router = Router.of({
         bottomTabBarRouter
     ]
 });
-if (OS === "Android") { // Android back button
-    Application.android.onBackButtonPressed = () => {
-        switch (activePage.name) {
-            case 'page1':
-                Application.exit();
-                break;
-        }
-    };
-}
+
 module.exports = router;
