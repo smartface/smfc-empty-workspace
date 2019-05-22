@@ -71,44 +71,6 @@
 		android:name="${PackageName}.permission.MAPS_RECEIVE"
 		android:protectionLevel="signature"/>
 	<uses-permission android:name="${PackageName}.permission.MAPS_RECEIVE"/> -->
-<<<<<<< HEAD
-
-	${compatibleScreens} ${supportsScreens}
-
-	<application android:icon="@drawable/icon" android:supportsRtl="true" android:label="${ApplicationName}" android:largeHeap="true" android:name="android.support.multidex.MultiDexApplication">
-		<uses-library android:name="org.apache.http.legacy" android:required="false" />
-
-		<activity android:name=".A" android:label="${ApplicationName}" android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan" android:screenOrientation="${Orientation}" android:theme="@style/AppTheme">
-
-			<intent-filter>
-				<action android:name="android.intent.action.SEARCH" />
-			</intent-filter>
-			<meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-
-			<intent-filter>
-				<action android:name="biz.smartface3.smartface_demo.run" />
-				<category android:name="android.intent.category.DEFAULT" />
-			</intent-filter>
-		</activity>
-
-		<service android:name="com.geniem.sprat.billing.BillingService" />
-		<receiver android:name="com.geniem.sprat.billing.BillingReceiver">
-			<intent-filter>
-				<action android:name="com.android.vending.billing.IN_APP_NOTIFY" />
-				<action android:name="com.android.vending.billing.RESPONSE_CODE" />
-				<action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED" />
-			</intent-filter>
-		</receiver>
-
-		<!-- Restrict the app direction or make it automatic -->
-		<meta-data android:name="locale" android:value="auto" />
-
-		<!--
-=======
 	
 	${compatibleScreens}
 
@@ -154,7 +116,6 @@
 			<meta-data android:name="locale"  android:value="auto" />
 
 			<!--
->>>>>>> aebde6efb13a12ccfe637b2037d5d07ba5d451e2
 				BroadcastReceiver that will receive intents from GCM
 				services and handle them to the custom IntentService.
 
@@ -163,7 +124,7 @@
 			-->
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 		
-		
+		<!--  WARNING: Comment out the FCM listener service and related for below or equal to 6.11.3  Player version -->
 		<!--
 		Defines the FCM  listener service to receive the push messages.
 		-->
@@ -189,7 +150,11 @@
 			<meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar" />
 		</service>
 		
+		<!-- FCM service listener Related upto here  -->
+	
 		
+		
+	    <!--  WARNING: Remove the comments for the GCM listener service and related for below  6.11.3 Player version  -->
 		<!--
 		
 		Application-specific subclass of GCMBaseIntentService that will
@@ -214,6 +179,8 @@
 				<action android:name="com.google.android.c2dm.intent.RECEIVE" />
 			</intent-filter>
 		</service>-->
+		
+		<!-- GCM service listener Related upto here  -->
 
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="${GoogleMapsKey}" />
 
