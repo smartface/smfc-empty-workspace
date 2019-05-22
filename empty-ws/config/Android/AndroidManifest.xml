@@ -124,7 +124,6 @@
 			-->
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 		
-		<!--  WARNING: Comment out the FCM listener service and related for below or equal to 6.11.3  Player version -->
 		<!--
 		Defines the FCM  listener service to receive the push messages.
 		-->
@@ -150,11 +149,7 @@
 			<meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar" />
 		</service>
 		
-		<!-- FCM service listener Related upto here  -->
-	
-		
-		
-	    <!--  WARNING: Remove the comments for the GCM listener service and related for below  6.11.3 Player version  -->
+
 		<!--
 		
 		Application-specific subclass of GCMBaseIntentService that will
@@ -180,7 +175,6 @@
 			</intent-filter>
 		</service>-->
 		
-		<!-- GCM service listener Related upto here  -->
 
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="${GoogleMapsKey}" />
 
