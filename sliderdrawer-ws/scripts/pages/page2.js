@@ -4,18 +4,16 @@ const PageTitleLayout = require("components/PageTitleLayout");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const extend = require("js-base/core/extend");
 const Color = require("sf-core/ui/color");
+const sliderDrawerWrapper = require("sliderdrawer-comp");
 
 // Get generated UI code
 const Page2Design = require('ui/ui_page2');
 
 const Page2 = extend(Page2Design)(
     // Constructor
-    function(_super, routeData, router, sliderDrawer) {
+    function(_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
-        this._router = router;
-        this._sliderDrawer = sliderDrawer;
-        this._routeData = routeData;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
@@ -32,14 +30,12 @@ function onShow(superOnShow) {
     const page = this;
     superOnShow();
     this.headerBar.titleLayout.applyLayout();
-    this._sliderDrawer.activateOption(1);
-    if (!page._routeData)
-        return;
-    console.log(page._routeData.message);
+    sliderDrawerWrapper.activateOption(1);
+    page.routeData && console.log(page.routeData.message);
 }
 
 function onLeftItemPress() {
-    this._sliderDrawer.toggleShow();
+    sliderDrawerWrapper.toggleShow();
 }
 
 /**
@@ -52,10 +48,10 @@ function onLoad(superOnLoad) {
     superOnLoad();
 
     page.android.onBackButtonPressed = () => {
-        this._router.goBack();
+        this.router.goBack();
     };
-    
-    let leftHeaderBarItem =  new HeaderBarItem({
+
+    let leftHeaderBarItem = new HeaderBarItem({
         onPress: onLeftItemPress.bind(this),
         image: Image.createFromFile("images://hamburger_menu_icon.png"),
         color: Color.WHITE

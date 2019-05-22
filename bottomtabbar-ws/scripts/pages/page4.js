@@ -1,19 +1,16 @@
-/* 
-		You can modify its contents.
-*/
 const extend = require('js-base/core/extend');
 const Page4Design = require('ui/ui_page4');
 
 const Page4 = extend(Page4Design)(
-  // Constructor
-  function(_super) {
-    // Initalizes super class for this page scope
-    _super(this);
-    // Overrides super.onShow method
-    this.onShow = onShow.bind(this, this.onShow.bind(this));
-    // Overrides super.onLoad method
-    this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-  });
+    // Constructor
+    function(_super) {
+        // Initalizes super class for this page scope
+        _super(this);
+        // Overrides super.onShow method
+        this.onShow = onShow.bind(this, this.onShow.bind(this));
+        // Overrides super.onLoad method
+        this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
+    });
 
 /**
  * @event onShow
@@ -22,8 +19,8 @@ const Page4 = extend(Page4Design)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-  superOnShow();
-  console.log("page4");
+    superOnShow();
+    console.log("page4");
 }
 
 /**
@@ -32,8 +29,8 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-  superOnLoad();
-  this.headerBar.leftItemEnabled = false;
+    superOnLoad();
+    this.headerBar.leftItemEnabled = false;
 }
 
 module.exports = Page4;

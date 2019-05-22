@@ -90,7 +90,7 @@
 					android:launchMode="singleTask"
 					android:windowSoftInputMode="adjustPan"
 					android:screenOrientation="${Orientation}"
-					android:theme="@style/AppTheme" >
+					android:theme="@style/defaultTheme" >
 				 
 					<intent-filter>
 						<action android:name="android.intent.action.SEARCH" />

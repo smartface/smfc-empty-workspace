@@ -1,3 +1,6 @@
+const HeaderBarItem = require("sf-core/ui/headerbaritem");
+const touch = require("sf-extension-utils/lib/touch");
+const Image = require("sf-core/ui/image");
 const PageTitleLayout = require("components/PageTitleLayout");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const extend = require("js-base/core/extend");
@@ -12,15 +15,13 @@ const Page2 = extend(Page2Design)(
     function(_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
-        this._router = router;
-        this._routeData = routeData;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        this.btnSayHello.onPress = () => {
-            alert("Hello World !");
-        }
+        touch.addPressEvent(this.btnSayHello, () => {
+            alert("Hello World!");
+        });
     });
 
 /**
@@ -30,13 +31,10 @@ const Page2 = extend(Page2Design)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-    const page = this;
+    const { routeData, headerBar } = this;
     superOnShow();
-    this.headerBar.titleLayout.applyLayout();
-    page.headerBar.itemColor = Color.BLACK;
-    if (!page._routeData)
-        return;
-    console.log(page._routeData.message);
+    headerBar.titleLayout.applyLayout();
+    routeData && console.info(routeData.message);
 }
 
 /**
@@ -45,11 +43,29 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-    const page = this;
+    var headerBar;
     superOnLoad();
     this.headerBar.titleLayout = new PageTitleLayout();
-    this.parentController && this.parentController.headerBar &&  (this.parentController.headerBar.itemColor = Color.WHITE);
     componentContextPatch(this.headerBar.titleLayout, "titleLayout");
+    this.headerBar.setItems([new HeaderBarItem({
+        title: "Option",
+        onPress: () => {
+            console.warn("You pressed Option item!");
+        }
+    })]);
+    if (System.OS === "Android") {
+        headerBar = this.headerBar;
+        headerBar.setLeftItem(new HeaderBarItem({
+            onPress: () => {
+                this.router.goBack();
+            },
+            image: Image.createFromFile("images://arrow_back.png")
+        }));
+    }
+    else {
+        headerBar = this.parentController.headerBar;
+    }
+    headerBar.itemColor = Color.WHITE;
 }
 
 module.exports = Page2;
