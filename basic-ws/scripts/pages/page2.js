@@ -1,6 +1,5 @@
 const HeaderBarItem = require("sf-core/ui/headerbaritem");
 const touch = require("sf-extension-utils/lib/touch");
-const Application = require("sf-core/application");
 const Image = require("sf-core/ui/image");
 const PageTitleLayout = require("components/PageTitleLayout");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
@@ -16,14 +15,12 @@ const Page2 = extend(Page2Design)(
     function(_super, routeData, router) {
         // Initalizes super class for this page scope
         _super(this);
-        this._router = router;
-        this._routeData = routeData;
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
         touch.addPressEvent(this.btnSayHello, () => {
-            alert("Hello World !");
+            alert("Hello World!");
         });
     });
 
@@ -34,12 +31,10 @@ const Page2 = extend(Page2Design)(
  * @param {Object} parameters passed from Router.go function
  */
 function onShow(superOnShow) {
-    const page = this;
+    const { routeData, headerBar } = this;
     superOnShow();
-    this.headerBar.titleLayout.applyLayout();
-    if (!page._routeData)
-        return;
-    console.info(page._routeData.message);
+    headerBar.titleLayout.applyLayout();
+    routeData && console.info(routeData.message);
 }
 
 /**
@@ -48,7 +43,7 @@ function onShow(superOnShow) {
  * @param {function} superOnLoad super onLoad function
  */
 function onLoad(superOnLoad) {
-    let headerBar;
+    var headerBar;
     superOnLoad();
     this.headerBar.titleLayout = new PageTitleLayout();
     componentContextPatch(this.headerBar.titleLayout, "titleLayout");
@@ -62,7 +57,7 @@ function onLoad(superOnLoad) {
         headerBar = this.headerBar;
         headerBar.setLeftItem(new HeaderBarItem({
             onPress: () => {
-                this._router.goBack();
+                this.router.goBack();
             },
             image: Image.createFromFile("images://arrow_back.png")
         }));
