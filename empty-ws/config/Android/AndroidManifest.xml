@@ -143,7 +143,6 @@
 		<!--
 		<service android:name="io.smartface.android.notifications.GCMListenerService" android:exported="false"><intent-filter><action android:name="com.google.android.c2dm.intent.RECEIVE" /></intent-filter></service>-->
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="${GoogleMapsKey}" />
-		<activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
 		<receiver android:name="io.smartface.android.notifications.LocalNotificationReceiver" />
 		<provider android:name="android.support.v4.content.FileProvider" android:authorities="${PackageName}.provider" android:exported="false" android:grantUriPermissions="true">
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
