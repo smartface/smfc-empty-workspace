@@ -141,5 +141,7 @@
 				<string>{768, 1024}</string>
 			</dict>
 		</array>
+		<key>UIUserInterfaceStyle</key>
+		<string>Light</string>
 	</dict>
 </plist>
