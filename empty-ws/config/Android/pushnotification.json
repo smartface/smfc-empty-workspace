@@ -13,5 +13,30 @@
         "data": {
             "icon": ""
         }
+    },
+    "channelId": {
+        "data": {
+            "channelId": ""
+        }
+    },
+    "channelIdTitle": {
+        "data": {
+            "channelIdTitle": ""
+        }
+    },
+    "channelIdImportance": {
+        "data": {
+            "channelIdImportance": ""
+        }
+    },
+    "deleteChannelId": {
+        "data": {
+            "deleteChannelId": ""
+        }
+    },
+    "showBadge": {
+        "data": {
+            "showBadge": ""
+        }
     }
 }
