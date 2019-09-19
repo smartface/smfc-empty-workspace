@@ -1,17 +1,13 @@
 {
-    "title": {
-        "data": {
-            "title": ""
-        }
+    "notification" :{
+        "title": "title-key",
+        "body": "body-key",
+        "icon": "icon-key",
+        "channelId": "channelId-key",
+        "channelIdTitle": "channelIdTitle-key",
+        "channelIdImportance": "channelIdImportance-key",
+        "deleteChannelId" : "deleteChannelId-key",
+        "showBadge" : "showBadge-key"
     },
-    "body": {
-        "data": {
-            "body": ""
-        }
-    },
-    "icon": {
-        "data": {
-            "icon": ""
-        }
-    }
+    "configuration_version": "1"
 }
