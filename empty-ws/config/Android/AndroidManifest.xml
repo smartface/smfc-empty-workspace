@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android" package="${PackageName}" android:versionCode="1" android:versionName="${Version}" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27" />
+	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
 	<!-- Required for SEND_SMS function. -->
 	<!-- <uses-permission android:name="android.permission.SEND_SMS" /> -->
 	<!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
