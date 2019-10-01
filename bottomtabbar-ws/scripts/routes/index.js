@@ -67,7 +67,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab1/page1",
-                    build: buildExtender({ pageName: "page1", singleton: true, pageProps: { shouldExit: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page1"), singleton: true, pageProps: { shouldExit: true } })
                 }),
             ]
         }),
@@ -78,7 +78,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab2/page2",
-                    build: buildExtender({ pageName: "page2", singleton: true, pageProps: { shouldExit: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page2"), singleton: true, pageProps: { shouldExit: true } })
                 }),
             ]
         }),
@@ -89,7 +89,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab3/page3",
-                    build: buildExtender({ pageName: "page3", singleton: true, pageProps: { shouldExit: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page3"), singleton: true, pageProps: { shouldExit: true } })
                 }),
             ]
         }),
@@ -100,7 +100,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab4/page4",
-                    build: buildExtender({ pageName: "page4", singleton: true, pageProps: { shouldExit: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page4"), singleton: true, pageProps: { shouldExit: true } })
                 }),
             ]
         }),
@@ -111,7 +111,7 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             routes: [
                 Route.of({
                     path: "/btb/tab5/page5",
-                    build: buildExtender({ pageName: "page5", singleton: true, pageProps: { shouldExit: true } })
+                    build: buildExtender({ getPageClass: () => require("pages/page5"), singleton: true, pageProps: { shouldExit: true } })
                 }),
             ]
         })
