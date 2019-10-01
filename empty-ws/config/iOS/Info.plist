@@ -25,6 +25,8 @@
 		<string>Your NSMicrophoneUsageDescription</string>
 		<key>NSSpeechRecognitionUsageDescription</key>
 		<string>Your NSSpeechRecognitionUsageDescription </string>
+		<key>UIUserInterfaceStyle</key>
+        <string>Light</string>
 		<key>CFBundleDevelopmentRegion</key>
 		<string>en</string>
 		<key>CFBundleDisplayName</key>
