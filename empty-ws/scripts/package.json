@@ -12,4 +12,3 @@
         "postinstall": "ENV_PATH=.smf/.env sfMarketplaceService install && rm -rf node_modules/.bin"
     }
 }
-git a
