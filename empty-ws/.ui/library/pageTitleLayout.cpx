@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".flexLayout",
+			"className": ".sf-flexLayout",
 			"id": "0201-dc86-607b-2891",
 			"initialized": true,
 			"props": {
@@ -25,7 +25,7 @@
 			}
 		},
 		{
-			"className": ".imageView .pageTitleLayout_logo",
+			"className": ".sf-imageView .pageTitleLayout_logo",
 			"id": "bc78-f2d3-ac3c-5b22",
 			"props": {
 				"autoHeight": 53.48837209302326,
