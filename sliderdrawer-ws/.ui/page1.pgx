@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".page",
+			"className": ".sf-page",
 			"id": "e891b86d",
 			"initialized": true,
 			"props": {
@@ -30,7 +30,7 @@
 			"version": "6.15.1"
 		},
 		{
-			"className": ".statusBar",
+			"className": ".sf-statusBar",
 			"id": "42b807d1",
 			"props": {
 				"children": [],
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"className": ".headerBar",
+			"className": ".sf-headerBar",
 			"id": "b7d28cff",
 			"props": {
 				"children": [],
@@ -60,7 +60,7 @@
 			}
 		},
 		{
-			"className": ".label",
+			"className": ".sf-label",
 			"id": "980522a9",
 			"props": {
 				"autoHeight": 90.5999984741211,

@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".flexLayout .sliderDrawerComp",
+			"className": ".sf-flexLayout .sliderDrawerComp",
 			"id": "6516-316c-ed33-849e",
 			"initialized": true,
 			"props": {
@@ -22,7 +22,7 @@
 			}
 		},
 		{
-			"className": ".flexLayout .sliderDrawerComp_option",
+			"className": ".sf-flexLayout .sliderDrawerComp_option",
 			"hiddenComponent": false,
 			"id": "781b-87a4-b98b-f3e4",
 			"initialized": false,

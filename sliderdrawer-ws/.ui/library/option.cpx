@@ -1,7 +1,7 @@
 {
 	"components": [
 		{
-			"className": ".flexLayout .sliderDrawerComp_option",
+			"className": ".sf-flexLayout .sliderDrawerComp_option",
 			"id": "334c-ae32-7231-acd0",
 			"initialized": true,
 			"props": {
@@ -24,7 +24,7 @@
 			}
 		},
 		{
-			"className": ".flexLayout .sliderDrawerComp_option_leftWall .sliderDrawerComp_option_leftWall.passive",
+			"className": ".sf-flexLayout .sliderDrawerComp_option_leftWall .sliderDrawerComp_option_leftWall.passive",
 			"id": "a504-c9d7-289d-1076",
 			"props": {
 				"children": [],
@@ -41,7 +41,7 @@
 			}
 		},
 		{
-			"className": ".flexLayout .sliderDrawerComp_option_divider",
+			"className": ".sf-flexLayout .sliderDrawerComp_option_divider",
 			"id": "3086-5722-f54b-b041",
 			"props": {
 				"children": [],
@@ -55,7 +55,7 @@
 			"userProps": {}
 		},
 		{
-			"className": ".label .sliderDrawerComp_option_title .sliderDrawerComp_option_title.passive",
+			"className": ".sf-label .sliderDrawerComp_option_title .sliderDrawerComp_option_title.passive",
 			"id": "56b0-6640-c634-ca92",
 			"props": {
 				"autoHeight": 22.47191011235955,
