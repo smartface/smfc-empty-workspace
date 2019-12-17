@@ -12,7 +12,7 @@ const Page2Design = require('ui/ui_page2');
 const Page2 = extend(Page2Design)(
     // Constructor
     function(_super, routeData, router) {
-        // Initalizes super class for this page scope
+        // Initializes super class for this page scope
         _super(this);
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
