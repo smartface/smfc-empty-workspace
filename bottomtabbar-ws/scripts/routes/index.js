@@ -52,6 +52,11 @@ const bottomTabBarRouter = BottomTabBarRouter.of({
             selected: Color.create("#00a1f1")
         }
     }),
+    onTabChangedByUser: (router, { prevTabIndex, tabIndex }) => {
+        let r = router.findChild((route, index) => index === tabIndex);
+        if (prevTabIndex === tabIndex)
+            r.goBackHome();
+    },
     items: () => [
         { title: "page1", icon: starImage },
         { title: "page2", icon: starImage },
