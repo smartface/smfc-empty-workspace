@@ -1,5 +1,4 @@
 const HeaderBarItem = require("sf-core/ui/headerbaritem");
-const touch = require("sf-extension-utils/lib/touch");
 const Image = require("sf-core/ui/image");
 const PageTitleLayout = require("components/PageTitleLayout");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
@@ -13,15 +12,15 @@ const Page2Design = require('ui/ui_page2');
 const Page2 = extend(Page2Design)(
     // Constructor
     function(_super, routeData, router) {
-        // Initalizes super class for this page scope
+        // Initializes super class for this page scope
         _super(this);
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        touch.addPressEvent(this.btnSayHello, () => {
+        this.btnSayHello.onPress = () => {
             alert("Hello World!");
-        });
+        };
     });
 
 /**

@@ -1,4 +1,3 @@
-const touch = require("sf-extension-utils/lib/touch");
 const componentContextPatch = require("@smartface/contx/lib/smartface/componentContextPatch");
 const PageTitleLayout = require("components/PageTitleLayout");
 
@@ -11,15 +10,15 @@ const Page1Design = require("ui/ui_page1");
 const Page1 = extend(Page1Design)(
     // Constructor
     function(_super, routeData, router) {
-        // Initalizes super class for this page scope
+        // Initializes super class for this page scope
         _super(this);
         // Overrides super.onShow method
         this.onShow = onShow.bind(this, this.onShow.bind(this));
         // Overrides super.onLoad method
         this.onLoad = onLoad.bind(this, this.onLoad.bind(this));
-        touch.addPressEvent(this.btnNext, () => {
+        this.btnNext.onPress = () => {
             this.router.push("/pages/page2", { message: "Hello World!" });
-        });
+        };
     });
 
 /**
