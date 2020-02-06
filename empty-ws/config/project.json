@@ -98,7 +98,8 @@
             },
             "android": {
                 "outputFolder": "output/Android",
-                "packageName": "io.smartface.demo"
+                "packageName": "io.smartface.demo",
+                "obfuscationEnabled": false
             }
         },
         "tempFolder": "output/.tmp"
