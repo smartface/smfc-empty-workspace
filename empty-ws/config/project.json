@@ -63,7 +63,8 @@
                         "active": false
                     }
                 },
-                "playerPath": null
+                "playerPath": null,
+                "licenseType": "Professional"
             },
             "android": {
                 "scripts": "scripts",
@@ -83,7 +84,8 @@
                     "modules": {
                     }
                 },
-                "playerPath": null
+                "playerPath": null,
+                "licenseType": "Professional"
             },
             "keys": {
                 "project3DesKey": "",
